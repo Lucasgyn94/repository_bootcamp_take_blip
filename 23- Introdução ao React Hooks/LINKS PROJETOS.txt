@@ -1,0 +1,4 @@
+https://github.com/celso-henrique/naruto-quotes-server
+
+LADO API EM PYTHON:>
+https://github.com/celso-henrique/naruto-quotes-server

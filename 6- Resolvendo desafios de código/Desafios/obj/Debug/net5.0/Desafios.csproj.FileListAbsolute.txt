@@ -1,0 +1,16 @@
+C:\Users\Admin\Desktop\DigitalOne\6- Resolvendo desafios de código\Desafios\bin\Debug\net5.0\Desafios.exe
+C:\Users\Admin\Desktop\DigitalOne\6- Resolvendo desafios de código\Desafios\bin\Debug\net5.0\Desafios.deps.json
+C:\Users\Admin\Desktop\DigitalOne\6- Resolvendo desafios de código\Desafios\bin\Debug\net5.0\Desafios.runtimeconfig.json
+C:\Users\Admin\Desktop\DigitalOne\6- Resolvendo desafios de código\Desafios\bin\Debug\net5.0\Desafios.runtimeconfig.dev.json
+C:\Users\Admin\Desktop\DigitalOne\6- Resolvendo desafios de código\Desafios\bin\Debug\net5.0\Desafios.dll
+C:\Users\Admin\Desktop\DigitalOne\6- Resolvendo desafios de código\Desafios\bin\Debug\net5.0\ref\Desafios.dll
+C:\Users\Admin\Desktop\DigitalOne\6- Resolvendo desafios de código\Desafios\bin\Debug\net5.0\Desafios.pdb
+C:\Users\Admin\Desktop\DigitalOne\6- Resolvendo desafios de código\Desafios\obj\Debug\net5.0\Desafios.csproj.AssemblyReference.cache
+C:\Users\Admin\Desktop\DigitalOne\6- Resolvendo desafios de código\Desafios\obj\Debug\net5.0\Desafios.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin\Desktop\DigitalOne\6- Resolvendo desafios de código\Desafios\obj\Debug\net5.0\Desafios.AssemblyInfoInputs.cache
+C:\Users\Admin\Desktop\DigitalOne\6- Resolvendo desafios de código\Desafios\obj\Debug\net5.0\Desafios.AssemblyInfo.cs
+C:\Users\Admin\Desktop\DigitalOne\6- Resolvendo desafios de código\Desafios\obj\Debug\net5.0\Desafios.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\DigitalOne\6- Resolvendo desafios de código\Desafios\obj\Debug\net5.0\Desafios.dll
+C:\Users\Admin\Desktop\DigitalOne\6- Resolvendo desafios de código\Desafios\obj\Debug\net5.0\ref\Desafios.dll
+C:\Users\Admin\Desktop\DigitalOne\6- Resolvendo desafios de código\Desafios\obj\Debug\net5.0\Desafios.pdb
+C:\Users\Admin\Desktop\DigitalOne\6- Resolvendo desafios de código\Desafios\obj\Debug\net5.0\Desafios.genruntimeconfig.cache

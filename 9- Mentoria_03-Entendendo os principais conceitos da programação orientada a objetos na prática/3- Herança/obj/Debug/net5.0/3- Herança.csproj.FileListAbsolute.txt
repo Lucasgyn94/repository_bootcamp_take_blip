@@ -1,0 +1,16 @@
+C:\Users\Admin\Desktop\DigitalOne\9- Mentoria_03-Entendendo os principais conceitos da programação orientada a objetos na prática\3- Herança\bin\Debug\net5.0\3- Herança.exe
+C:\Users\Admin\Desktop\DigitalOne\9- Mentoria_03-Entendendo os principais conceitos da programação orientada a objetos na prática\3- Herança\bin\Debug\net5.0\3- Herança.deps.json
+C:\Users\Admin\Desktop\DigitalOne\9- Mentoria_03-Entendendo os principais conceitos da programação orientada a objetos na prática\3- Herança\bin\Debug\net5.0\3- Herança.runtimeconfig.json
+C:\Users\Admin\Desktop\DigitalOne\9- Mentoria_03-Entendendo os principais conceitos da programação orientada a objetos na prática\3- Herança\bin\Debug\net5.0\3- Herança.runtimeconfig.dev.json
+C:\Users\Admin\Desktop\DigitalOne\9- Mentoria_03-Entendendo os principais conceitos da programação orientada a objetos na prática\3- Herança\bin\Debug\net5.0\3- Herança.dll
+C:\Users\Admin\Desktop\DigitalOne\9- Mentoria_03-Entendendo os principais conceitos da programação orientada a objetos na prática\3- Herança\bin\Debug\net5.0\ref\3- Herança.dll
+C:\Users\Admin\Desktop\DigitalOne\9- Mentoria_03-Entendendo os principais conceitos da programação orientada a objetos na prática\3- Herança\bin\Debug\net5.0\3- Herança.pdb
+C:\Users\Admin\Desktop\DigitalOne\9- Mentoria_03-Entendendo os principais conceitos da programação orientada a objetos na prática\3- Herança\obj\Debug\net5.0\3- Herança.csproj.AssemblyReference.cache
+C:\Users\Admin\Desktop\DigitalOne\9- Mentoria_03-Entendendo os principais conceitos da programação orientada a objetos na prática\3- Herança\obj\Debug\net5.0\3- Herança.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin\Desktop\DigitalOne\9- Mentoria_03-Entendendo os principais conceitos da programação orientada a objetos na prática\3- Herança\obj\Debug\net5.0\3- Herança.AssemblyInfoInputs.cache
+C:\Users\Admin\Desktop\DigitalOne\9- Mentoria_03-Entendendo os principais conceitos da programação orientada a objetos na prática\3- Herança\obj\Debug\net5.0\3- Herança.AssemblyInfo.cs
+C:\Users\Admin\Desktop\DigitalOne\9- Mentoria_03-Entendendo os principais conceitos da programação orientada a objetos na prática\3- Herança\obj\Debug\net5.0\3- Herança.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\DigitalOne\9- Mentoria_03-Entendendo os principais conceitos da programação orientada a objetos na prática\3- Herança\obj\Debug\net5.0\3- Herança.dll
+C:\Users\Admin\Desktop\DigitalOne\9- Mentoria_03-Entendendo os principais conceitos da programação orientada a objetos na prática\3- Herança\obj\Debug\net5.0\ref\3- Herança.dll
+C:\Users\Admin\Desktop\DigitalOne\9- Mentoria_03-Entendendo os principais conceitos da programação orientada a objetos na prática\3- Herança\obj\Debug\net5.0\3- Herança.pdb
+C:\Users\Admin\Desktop\DigitalOne\9- Mentoria_03-Entendendo os principais conceitos da programação orientada a objetos na prática\3- Herança\obj\Debug\net5.0\3- Herança.genruntimeconfig.cache

@@ -1,0 +1,22 @@
+## CRIANDO PROPRIEDADE PARA A STRUCT
+$ public <tipoDado> <NomeVariavel> {get ; set}
+
+get = pegue
+set = definir
+
+var = inferência de tipo, automaticamente o console pega o tipo da variável
+
+TryParse = um método que retorna um valor booleano dizendo se consegue ou não fazer uma conversão de tipo
+tryparse = tente passar;
+EX: if (decimal.TryParse(Console.ReadLine(), out decimal nota))
+
+null = nulo
+Um array n pode ser nulo, somente tipos inteiros.
+
+string.IsNullOrEmpty() = é um metodo do tipo string onde consigo passar um valor pra ele de uma string, se for verdadeiro ele retorna true, se nao false;
+
+struct e usada em estruturas de códigos mais simples ao invés de classe;
+
+OBS: Structs são estruturas de daos que podem conter membros de dados e membros de ação.
+
+QUESTIONARIO:

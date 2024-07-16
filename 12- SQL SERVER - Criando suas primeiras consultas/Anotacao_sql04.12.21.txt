@@ -1,0 +1,98 @@
+O que são banco de dados?
+São dados armazenados em algum lugar.
+Ex: Armazenamento de dados no excel, word etc.
+
+O que são SGBDs?
+Softwares que padronizam os bancos de dados
+
+bit em banco de dados e um tipo de dados que aceita 0 ou 1 (verdadeiro ou falso)
+
+
+select getdata() = mostrar informação de data e hora sql.
+
+select = from sys.tables = mostra todas tabelas existente no banco de dados atual.
+
+create database Ecommerce = cria banco de dados Ecommerce.
+
+varchar é um tipo de dadou sempre que indicar o tamanho
+null = ausência de valores
+not null = não aceita valores nulos
+
+=> CLAUSULA WHERE
+WHERE = ONDE
+
+TABELA VERDADE AND e OR
+=> AND
+V AND V = V
+V AND F = F
+F AND V = F
+F AND F = F
+
+=> OR
+V OR V = V
+V OR F = V
+F OR V = V
+F OR F = F
+
+=> USO DE ESTRUTURAS
+SELECT *,
+   CASE
+      WHEN TIPOPESSOA = 'J' THEN 'JURIDICA'
+      WHEN TIPOPESSOA = 'F' THEN 'FISICA'
+      ELSE 'PESSOA INDEFINIDA'
+   END
+
+=> CONVERSÃO
+SELECT *, CONVERT(VARCHAR, DATADESOLICITACAO)
+Faz a conversão do tipo datadesolicitao para varchar
+
+=> CHAVE PRIMÁRIA
+É uma chave que identifica um registro de forma única.
+
+=> CHAVE ESTRANGEIRA
+É uma chave que vai fazer a relação de uma tabela com outra tabela
+
+=> ALTERANDO TABELA PARA ADICIONAR CHAVE PRIMARIA
+
+ALTER TABLE CLIENTES ADD CONSTRAINT PK_CLIENTE PRIMARY KEY (CODIGO)
+
+=> NORMALIZAÇÃO
+Ela tem 3 passos
+1 - Não deve haver um conjunto de colunas repetidos ou um conjunto de informações em apenas uma propriedade;
+
+2- Não pode ter informações duplicadas que dependa da chave primária
+
+=> TIPOS DE JOIN
+inner join
+O Inner Join é o método de junção mais conhecido e, como ilustra a Figura 2, retorna os registros que são comuns às duas tabelas.
+
+
+left join
+O Left Join, cujo funcinamento é ilustrao na Figura 4, tem como resultado todos os registros que estão na tabela A (mesmo que não estejam na tabela B) e os registros da tabela B que são comuns à tabela A.
+
+right join
+Usando o Right Join, conforme mostra a Figura 6, teremos como resultado todos os registros que estão na tabela B (mesmo que não estejam na tabela A) e os registros da tabela A que são comuns à tabela B.
+
+inner = inter
+join = junte
+on = sobre
+count = contar
+
+=> GROUP BY
+A cláusula GROUP BY agrupa linhas baseado em semelhanças entre elas. Você pode, por exemplo, agrupar todas as linhas na tabela PLAYERS com base em local de residência; o resultado seria um grupo de jogadores por cidade. Daí, você poderia questionar quantos jogadores existem em cada grupo. A pergunta que na verdade é respondida neste caso é: quantos jogadores moram em cada cidade? Outros exemplos são: quantos jogos foram disputados por time e quantos incorreram em penalidades por jogador?
+
+Adicionando funções de agregação, tais como COUNT (CONTAR) e SUM (SOMAR), a um bloco selecionado com a utilização de uma cláusula GROUP BY, informações podem ser agregadas. Agregar significa que você pergunta não pelos valores individuais, mas por somas, médias, frequências e subtotais.
+
+=> ORDER BY
+ORDER BY = ORDENAR POR
+
+ORDER BY organiza os resultados de acordo com uma ou mais colunas da tabela, podendo definir a ordem do resultados como crescente ou decrescente.
+
+OBS:
+Caso a ordem não seja declarada, será crescente (ASC), por padrão.
+
+NOT IN() = NÃO ESTEJA EM
+
+BETWEEN = TRAS O QUE ESTÁ DENTRO DO RANGE DE VALOR
+
+

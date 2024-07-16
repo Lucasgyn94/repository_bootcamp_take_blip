@@ -1,0 +1,486 @@
+.NET = dot net
+
+## O QUE É?
+É uma infraestrutura para desenvolvimento de software criada pela microsoft.
+Uma aplicação .NET é desenvolvida para e roda em uma das seguintes implementações do .NET:
+ * .NET Core
+ * .NET Framework
+ * Mono
+ * Universal Windows Plataform (UWP)
+
+## APP MODELS
+Cada uma das versões do framework implementa um contrato.
+-> .NET FRAMEWORK
+WPF, Windows Forms, ASP.NET
+
+## .NET CORE
+UWP, ASP.NET Core
+
+## XAMARIN
+IOS, Android, OS X
+
+-> Cada implementação inclui um ou mais .NET Runtimes (ambiente de execução):
+ * .NET Core: CoreCLR e CoreRT
+ * .NET Framework: CLR
+ * Mono: Mono Runtime
+ * UWP: .NET Native
+
+-> Atualmente a Microsoft desenvolve e suporta 3 linguagens:
+- C#
+- F#
+- VB
+
+## ONDE USAR O .NET?
+* Desktop 
+-WPF 
+-Windows Forms
+-UWP
+
+* Web 
+- ASP NET
+
+* CLOUD
+- Azure
+
+* MOBILE
+- Xamarin
+
+* GAMING
+- Unity
+
+* loT
+- ARM32
+- ARM64
+
+* Al
+- ML.NET
+- NET for Apache Spark
+
+* Tools
+- Visual Studio
+- Visual Studio For Mac
+- Visual Studio Code
+- Command Line
+
+* .NET STANDARD 
+- NET 5
+
+* Infrastructure
+- Runtime Components
+- Compilers
+- Languages
+
+## CLI DO .NET
+* Mostrar a documentação da interface do .NET no prompt de comando
+$ dotnet --help
+
+## OPCOES sdk-options:
+  -d|--diagnostics  Habilitar saída de diagnóstico.
+  -h|--help         Mostrar a ajuda da linha de comando.
+  --info            Exiba informações do .NET.
+  --list-runtimes   Exiba os runtimes instalados.
+  --list-sdks       Exiba os SDKs instalados.
+  --version         Exiba a versão do SDK do .NET em uso.
+
+## Comandos do SDK:
+*  add               Adicionar um pacote ou uma referência a um projeto do .NET.
+
+*  build             Criar um projeto do .NET.
+
+*  build-server      Interagir com servidores iniciados por um build.
+
+*  clean             Limpar as saídas do build de um projeto do .NET.
+
+*  help              Mostrar a ajuda da linha de comando.
+  list              Listar as referências de um projeto do .NET.
+
+*  msbuild           Executar comandos do MSBuild (Microsoft Build Engine).
+
+*  new               Criar um novo projeto ou arquivo do .NET.
+
+*  nuget             Fornece comandos adicionais do NuGet.
+
+*  pack              Criar um pacote do NuGet.
+
+*  publish           Publicar um projeto do .NET para implantação.
+
+*  remove            Remover um pacote ou uma referência de um projeto do .NET.
+
+*  restore           Restaurar as dependências especificadas em um projeto do .NET.
+
+*  run               Criar e executar uma saída de projeto do .NET.
+
+*  sln               Modificar os arquivos da solução do Visual Studio.
+
+*  store             Armazenar os assemblies especificados no repositório de pacotes do runtime.
+
+*  test              Executar testes de unidade usando o executor de testes especificado em um projeto do .NET.
+
+*  tool              Instalar ou gerenciar ferramentas que ampliam a experiência do .NET.
+
+*  vstest            Executar comandos do VSTest (Microsoft Test Engine).
+
+## Uso: new [options]
+
+Opções:
+  -h, --help                 Exibe a ajuda para este comando.
+  -l, --list                 Lista os modelos que contêm o nome do modelo especificado. Se nenhum nome for especificado, lista todos os modelos.
+  -n, --name                 O nome da saída que está sendo criada. Se nenhum nome for especificado, o nome do diretório de saída será usado.
+  -o, --output               Local para colocar a saída gerada.
+  -i, --install              Instala um pacote de origem ou modelo.
+  -u, --uninstall            Desinstala uma fonte ou um pacote de modelo.
+  --interactive              Permite que o comando dotnet restore interno seja interrompido e aguarde a ação ou entrada do usuário (por exemplo, para concluir a autenticação).
+  --nuget-source             Especifica uma fonte do NuGet a ser usada durante a instalação.
+  --type                     Filtra modelos com base em tipos disponíveis. Os valores predefinidos são "projeto" e "item".
+  --dry-run                  Exibe um resumo do que aconteceria se a linha de comando especificada fosse executada se resultar em uma criação de modelo.
+  --force                    Força o conteúdo a ser gerado mesmo que ele altere arquivos existentes.
+  -lang, --language          Filtra modelos baseados em linguagem e especifica o idioma do modelo a ser criado.
+  --update-check             Verifique os pacotes de modelos disponíveis para atualizações.
+  --update-apply             Verifique os pacotes de modelos atualmente para atualização e instalação como atualizações.
+  --search                   Pesquisa os modelos em NuGet.org.
+  --author <AUTHOR>          Filtra os modelos com base no autor. Aplica-se a --pesquisar e --listar.
+  --package <PACKAGE>        Filtra os modelos baseados na ID do pacote NuGet. aplica-se a --pesquisa.
+  --columns <COLUMNS_LIST>   Lista de colunas separadas por vírgulas a serem exibidas na saída --lista e --pesquisa.
+                             As colunas com suporte são: idioma, marcas, autor, tipo.
+  --columns-all              Exibir todas as colunas na saída de --lista e --pesquisa.
+  --tag <TAG>                Filtra os modelos com base na marca. Aplica-se a --pesquisa e --lista.
+
+## APLICAÇÃO CONSOLE = APLICAÇÃO QUE VAI SER EXECUTADA VIA TERMINAL
+
+=======================
+->PRATICA
+
+## CRIANDO PASTA COM A ESTRUTURA DO PROJETO C# DENTRO DO VISUAL BASIC VIA TERMINAL
+$ dotnet new console -n <nomePasta>
+
+-> Comando para abrir explorer na pasta atual via cmd
+$ explorer .
+
+-> Abrir o conteudo da pasta via terminal (Prepara o conteudo no visualCode)
+$ code .
+
+bin = Pasta bin são os binários da compilação.
+
+-> dotnet restore = restaura/baixa os pacotes
+
+->Restaurar os pacotes e pega o codigo fonte e fazer o processo de compilação e gera os binários.
+$ dotnet build
+
+## Comando que imprime na tela em c#
+* Imprime e pula uma linha
+Console.WriteLine();
+* Imprime sem pular linha
+Console.Write();
+
+## COMANDO QUE RESTAURA UM PROJETO EM UMA PASTA QUE NÃO SEJA A ORIGEM (CASOS EM Q SE SAI DA PASTA DO PROJETO INICIAL)
+$ dotnet build <nomePasta>
+EX:
+$ dotnet build DigitalOne
+
+## COMANDO QUE EXECUTA UM ARQUIVO Project.cs fora da pasta do arquivo
+$ dotnet run -p <nomePasta>
+EX:
+$ dotnet run -p DigitalOne
+
+===========================
+
+=> CONHECENDO O C#
+
+1. O que é C#?
+é uma linguagem elegante, orientada a objeto e fortemente tipada.
+A sintaxe do C# é similar a do C, C++ ou Java.
+Suporta os conceitos de encapsulamento, herança e polimorfismo (OO).
+
+Os programas C# são executados no .NET, que inclui:
+ * CLR (Common Language Runtime).
+ * Conjunto unificado de bibliotecas de classes.
+Atualmente o compilador do C# é o Roslyn.
+
+2- Como funciona?
+O código-fonte escrito em C# é compilado em uma linguagem intermediária (IL).
+O código e os recursos de IL são armazenados no disco em um arquivo executável chamado assembly, geralmente com uma extensão .exe ou .dll.
+
+Quando o programa C# é executado, o assembly é carregado no CLR.
+Em seguida o CLR executará a compilação just in time (JIT) para converter o código IL em instruções de máquinas nativas.
+
+O CLR também fornece outros serviços:
+ * Garbage Collector
+é uma ferramenta que trabalha coletando o lixo da memória do computador, ele verifica/valida objetos em memória que não estão mais sendo utilizados e ele desaloca esses objetos da memória para que não fique cheio demais, honeroso desnecessariamente
+
+ * Exception Handler
+receber e controlar as excessões que ocorrem de erro no código
+
+ * Resources Manager
+gerenciador de recursos
+
+Além dos serviços de tempo de execução, o .NET também inclui uma extensa biblioteca com milhares de classes que fornecem uma ampla variedade de funcionalidades úteis, desde entrada e saída de arquivos, manipulação de cadeias de caracteres, análise XML, etc.
+
+=> ESTRUTURA DE PROGRAMA C#
+Os principais conceitos organizacionais em C# são:
+* programas
+* namespaces
+* tipos
+* membros
+* assemblies
+
+-> Programas C# consistem em um ou mais arquivos;
+Os programas declaram tipos, que contêm membros e podem ser organizados em namespaces;
+Classes e interfaces são exemplos de tipos;
+Campos, métodos, propriedades e eventos são exemplos de membros;
+
+Quando os programas C# são compilados, eles são fisicamente empacotados em assemblies;
+Os assemblies geralmente têm a extensão de arquivo .exe ou .dll, dependendo se são aplicações ou bibliotecas.
+
+===========================
+
+=> TIPOS E VARIÁVEIS
+Existem dois tipos de variáveis no c#:
+* Tipos de valor
+Variáveis de tipos de valor contêm diretamente seus dados.
+As variáveis têm sua própria cópia dos e não é possível que as operações afetem outra variável (exceto no caso das variáveis de parâmetro ref e out).
+
+Os principais tipos de valor em C# são:
+* Númericos: sbyte, short, int, long, byte, ushort, uint, ulong.
+
+* Caracteres Unicode: char
+
+* Pontos flutuantes: float, double, decimal
+
+* Booleano: bool
+
+E EXISTEM OUTROS TIPOS QUE NÃO ESTAM EM UM GRUPO ÚNICO MAIS SÃO BASTANTE UTILIZADOS: enum, struct, e tipos nullable (Exemplo int?)
+
+=> TIPOS DE REFERÊNCIA
+Variáveis de tipos de referência armazenam referências a seus dados.
+É possível que duas variáveis façam referência ao mesmo objeto e, portanto, que operações em uma variável afetem o objeto referenciado pela outra variável. 
+São exemplos de tipos de refêrencia:
+* Tipos Classe: class, object, string
+
+* Tipos Arrays: int [], int[,], etc...
+* interface, delegate
+
+=> INSTRUÇÕES
+são ações de um programa, são expressas usando instruções
+{
+   Um bloco permite que    várias instruções sejam    escritas em contextos
+}
+
+Quando falamos em instruções, estamos nos referindo à:
+* Declaração de variáveis e constantes locais
+* if
+* switch
+* while
+* do
+* for
+* foreach
+
+E existem instruções auxiliares a tudo isso:
+* break
+* continue
+* return
+* throw = lançar
+* try .. catch .. finally
+* using
+
+do {} while (!string.IsNullyOrEmpty(texto)) = enquanto a string não for nula ou vazia
+
+foreach = para cada
+EX:
+foreach (string s in args) {
+  Console.WriteLine(s);
+}
+Para cada string s no meu array de string (args), imprima a string s
+
+StartsWith = comecar com
+EX: if (args[i].StartsWith("/")) {
+  continue;
+}
+Se o valor da posição i no momento da execução começar com /, eu continuo, vou pra próxima iteração
+
+TRATAMENTOS DE EXCESSÕES SE USA "TRY" e "CATCH"
+try = tente
+
+catch = pegar
+
+## USAR TEMPORARIAMENTE UM OBJETO
+using = usando
+EX:
+using(System.IO.textWriter w = System.IO.File.CreateText("teste.txt")) {
+  w.WriteLine("Line 1");
+  w.WriteLine("Line 2");
+  w.WriteLine("Line 3");
+}
+Criar o arquivo teste.txt da linha 1 a linha 3 e depois elimina a variavel/objeto w;
+
+===========================
+
+=> ARRAY
+Um array é uma estrutura de dados que contém um número X de elementos, todos do mesmo tipo, que são acessados através de índices computados.
+
+Arrays são tipos de referência e a declaração de uma variável array simplesmente reserva espaço para uma referência de uma instância de array.
+
+Ao criar um array é especificado o tamanho da nova instância, que é fixo durante todo o tempo de vida da instância.
+
+Os índices dos elementos de um array variam de 0 a comprimento do array - 1.
+
+-> ARRAY UNIDIMENSIONAL
+é um array de uma única dimensão.
+EX:
+int [] a = new int [10];
+
+for (int i = 0; i < a.Length; i++) {
+  a[i] = i * i;
+}
+
+for (int i = 0; i < a.Length; i++) {
+  Console.WriteLine($"a[{i}] = {a[i]}");
+}
+
+-> Array multidimensional
+São as chamadas matrizes
+EX:
+int [,] a2 = new int[10, 5];
+
+int [,,] a3 = new int [10, 5, 2];
+
+-> INICIALIZANDO ARRAY
+int [] a = new int [] {1, 2, 3}
+
+int [] a = {1, 2, 3};
+
+==========================
+
+=> CLASSES E OBJETOS ESSENCIAIS EM C#
+Classes são os tipos mais fundamentais de C#.
+
+Uma classe é uma estrutura de dados que combina estado(campos) e ações (métodos).
+
+Objetos são as instâncias de uma classe.
+
+As classes suportam herança e polimorfismo, mecanismos pelos quais as classes derivadas podem estender e especializar as classes base.
+
+Instâncias de classes (objetos) são criadas usando o operador new, que aloca memória para uma nova instância, chama um construtor para inicializar a instância e retorna uma referência à instância.
+EX:
+Ponto p1 = new Ponto(0, 0);
+Ponto p2 = new Ponto(10, 20);
+
+A mémoria ocupada por um objeto é recuperada automaticamente quando o objeto não está mais acessível. Não é necessário nem possível desalocar explicitamente objetos em C#.
+
+-> MEMBROS
+Os membros de uma classe podem ser estáticos ou membros da instância.
+
+Membros estáticos pertencem a classe e membros de instância pertencem ao objeto.
+EX de membros:
+Constantes, variáveis, métodos, propriedades, construtores, etc...
+
+-> ACESSIBILIDADE
+Cada membro de uma classe tem uma acessibilidade associada, que controla as regiões do texto do programa que podem acessar o membro.
+Podem ser:
+* public
+Publico significa que qualquer parte do código pode acessá-lo, qualquer membro.
+* protected
+Protegido
+* internal
+Interno, o membro só vai ser acessado pelo assembly do qual ele faz parte.
+* private
+privado = significa que o membro só vai ser acessado unica e exclusivamente dentro da classe que ele está contido.
+
+-> HERANÇA
+Uma declaração de classe pode especificar uma classe base, herdando os membros public, internal e protected da classe base.
+
+Omitir uma especificação de classe base é o mesmo que derivar do tipo object.
+
+-> MÉTODOS
+Um método é um membro que implementa uma computação ou ação que pode ser executada por um objeto ou classe.
+
+Os métodos podem ter uma lista de parâmetros, que representam valores ou referências de variáveis passados para o método, e um tipo de retorno, que específica o tipo do valor calculado e retornado pelo método.
+EX: Uma classe para descrever um eletrodoméstico, onde se tem as propriedas/estados, voltagem, cor e as ações de ligar/ligar/processar.
+
+OBS: Uma boa prática e dar nome aos MÉTODOS que indicam um verbo, porque indica uma ação e as PROPRIEDADES que sejam substantivos, porque eles vão indicar as propriedades da classe e/ou objetos, de ambos.
+
+This. = notação this referencia a classe
+this = isto
+
+-> HERDANDO DE UMA OUTRA CLASSE
+public class <nomeClasseDestino> : <nomeClasseOrigem>
+EX:
+public class Ponto3D : Ponto
+Nesse exemplo a classe Ponto3D herda a classe Ponto.
+
+## METODO QUE PERMITE QUE UMA CLASSE FILHA SOBESCREVA A ATUAÇÃO DELE.
+public virtual void CalcularDistancia3() {
+  // Faz alguma coisa
+}
+pra classe base ele faz isso.
+Agora na classe filha:
+public override void CalcularDistancia3(){
+  // Faz alguma coisa
+}
+Quando faço isso estou dizendo para a classe filha sobrepor o método CalcularDistancia3() fazendo o conjunto de instruções que estiverem sobre o novo bloco.
+
+==========================
+
+=> CONHECENDO STRUCTS, INTERFACES E ENUMS
+* Structs
+Como as classes, as structs são estruturas de dados que podem conter membros de dados e membros de ação, mas, diferentemente das classes, as structs são tipos de valor e não requerem alocação de heap.
+
+Uma variável de um tipo de struct armazena diretamente os dados da estrutura, enquanto uma variável de um tipo de classe armazena uma referência a um objeto alocado na memória.
+
+Structs não aceitam herança determinada pelo desenvolvedor.
+
+São úteis para pequenas estruturas de dados que possuem semântica de valor: númmeros complexos, pontos em um sistema de coordenadas ou paras de chave-valor em um dicionário são bons exemplos de utilização.
+
+O uso de structs em vez de classes para pequenas estruturas de dados pode fazer uma grande diferença no número de alocação de memória.
+EX:
+public struct Ponto {
+
+  public int x, y;
+  public Ponto(int x, int y) {
+    this.x = x;
+    this.y = y;
+}
+}
+
+Construtores de structs são chamados com o operador <new>, semelhante a um construtor de classe, mas em vez de alocar dinamicamente um objeto no heap gerenciado e retornar uma referência a ele, um construtor struct simplesmente retorna o próprio valor struct (normalmente em um local temporário na stack), e esse valor é copiado conforme necessário.
+
+===========================
+
+=> INTERFACES
+Uma interface define um contrato que pode ser implementado por classes e structs.
+
+Uma interface pode conter métodos, propriedades, eventos e indexadores.
+
+Uma interface não fornece implementações dos membros que define = apenas suas "assinaturas";
+
+As interfaces podem empregar herança múltipla;
+EX DECLARANDO INTERFACE:
+interface IControl {
+  void Paint();
+}
+interface IListBox {
+  void SetText (string text);
+}
+interface IcomboBox: IControl, IListBox {} 
+
+==========================
+
+=> ENUMS (Enumerador)
+Um enum é um tipo de valor distinto com um conjunto de constantes nomeadas.
+
+Imagina um sistema que tem um status de nf, então ela pode ser emitida, cancelada, recusada etc, para cada um desses status temos um valor númerico, exemplo 1, 2, 3, porém esses seriam valores discretos, não e muito conveniente tratar dessa forma no meio do código, pq vai precisar fazer verificações etc, então para ficar de uma forma mais semântica podemos utilizar o enum (enumerados), porque ai estamos definindo um conjunto de valores discretos e atribuimos uma descrição, um significado mais semântico para cada um desses itens discretos.
+EX:
+enum cor {
+  Vermelho,
+  Verde,
+  Azul
+}
+
+Cada tipo de enum possui um tipo integral correspondente chamado tipo subjacente do tipo de enum;
+
+Um tipo de enumeração que não declara explicitamente um tipo subjacente tem um tipo subjacent int;
+EX:
+enum Alinhamento: sbyte {
+  Esquerda = -1,
+  Centro = 0,
+  Direita = 1
+}

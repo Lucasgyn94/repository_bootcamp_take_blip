@@ -1,0 +1,260 @@
+GIT e GITHUB
+
+git = command line interface
+(programa linha de comando) 
+
+Comandos básicos terminal windows
+- cd
+- dir
+- mkdir
+- del / rmdir
+
+-> em linux
+- cd
+- ls
+- mkdir
+- rm -rf
+_______________
+
+dir = comando que trás a lista de diretório contidos na pasta
+
+-> Subir e descer nível dos diretórios
+cd / = sai da pasta atual e leva direto aos diretorios do disco local c
+
+-> Para entrar em uma pasta do diretório
+* cd nomePasta
+Ex: cd Windows
+
+-> Retroceder um nível do diretório
+* cd ..
+OBS: Deve usar o espaço após o cd.
+
+-> Limpeza de tela no windows
+cls
+
+-> Auto completar
+cd + inicial do nome da pasta + tecla TAB
+Ex:
+cd W e aperta TAB para auto completar o windows
+
+-> Criar pasta
+mkdir = comando usado para criação de pastas via prompt de comando
+Ex: mkdir workSpace
+* Cria a pasta workSpace
+
+OBS: No cmd para entrar em pastas com mais de uma palavra se usa cd + "nome arquivo" entre aspas.
+
+echo = printa de volta no terminal um texto ou frase que agente passa
+
+echo hello >
+
+> é um redirecionador de fluxo. Então ele pega a saída da função echo e joga em um arquivo
+
+-> Deletar os arquivos de uma pasta/repositório
+del + nomePasta
+Ex: del workSpace
+* Deleta todos os arquivos da pasta sem deletar a pasta em si.
+
+-> Comando para deletar pasta inteira no windows
+rmdir = remove directory
+- rmdir + nomePasta 
+EX: rmdir workSpace /S /Q
+
+OBS: Para que fique de forma simples e simplificada se usa as flags /S /Q, força apaga todas as demais pastas q estiverem dentro do diretorio
+
+## Topicos Fundamentais
+- SHA1
+- Objetos Fundamentais
+- Sistema Distribuído
+- Segurança
+
+* A sigla SHA significa Secure Hash Algorithm (Algoritmo de Hash Seguro), é um conjunto de funções hash criptográficas projetadas pela NSA (Agência de Segurança Nacional dos EUA).
+É uma forma curta de representar um arquivo.
+EX: 
+echo "Ola mundo" | openssl sha1 > 
+(stdin) = f9fc856es45dfcv78vc54vc54vrr87t4dssa542a
+
+-> Passando um arquivo.txt para o algoritmo de encriptação usando "sha1"
+- openssl sha1 + nomeArquivo
+EX:
+openssl sha1 texto.txt
+
+## OBJETOS GIT
+São três os tipos de objetos básicos do GIT responsáveis pelo versionamento do código:
+- Blobs
+É um objeto que contém metadados do GIT, além do tipo do objeto, o tamanho da string ou arquivo + \0 + conteudo de fato do arquivo.
+Ex:
+Blob
+
+\0
+Ola Mundo
+
+EX: 
+echo 'conteuto' | git hash-object --stdin > fc31e91b26cf85a55e072476de7f263c89260eb1
+
+echo -e 'blob 9\0conteudo' | openssl sha1 > fc31e91b26cf85a55e072476de7f263c89260eb1
+
+=========================
+
+- Trees
+trees = arvóres
+As trees armazenam blobs
+- Contém metadados
+
+Tree
+
+\0
+
+blob	sa4d8s	texto.txt
+
+* A "tree" vai ser responsável por montar toda a estrutura e onde está localizado os arquivos. Elas podem apontar tanto para "blobs" quanto para outras "tree"
+
+========================
+- Commits
+"commit" é o objeto que vai juntar tudo, que vai dar sentido para alteração que você está fazendo.
+
+Ex:
+Commit		<tamanho>
+tree	    s4a5sq1
+parente	    a98acq1
+autor	    perkles
+mensagem "inicia... " 
+timestamp
+
+O commit aponta para uma árvore, ele aponta para um "parente", ou seja, aponta para o último "commit" realizado antes dele, aponta também para um autor, assim como para uma mensagem
+
+## CHAVES SSH e TOKENS
+* Chave SSH
+é uma forma de estabelecer uma conexão segura e encriptada entre duas máquinas
+
+## Gerando chave SSH (Autenticação Segura)
+* Comandos
+ssh-keygen -t ed25519 - c + emailGithub
+
+SALVO EM
+c/Users/Admin/.ssh
+
+-> VIZUALIZAR CONTEUDO DE UMA CHAVE
+cat id_ed25519.pub
+
+-> VIZUALIZAR CAMINHO DE UMA PASTA
+* pwd
+
+-> Inicializar o ssh agent (é uma entidade que vai ficar encarregada de pegar as chaves e lidar com elas)
+- eval $(ssh-agent -s)
+
+-> Apos gerar o agente, vamos entregar a chave para ele
+- ssh-add id_ed25519
+OBS: Passamos para o agente a chave privada e não a publica, assim toda vez que chegar uma criptografia com essa chave, ele vai utilizar da nossa chave privada para descriptografar essa mensagem
+
+OBS: TODA VEZ QUE AGENTE VAI CLONAR UM REPOSITORIO, SE TIVER UMA CHAVE SSH NA MAQUINA, O SISTEMA NÃO ACEITA SIMPLESMENTE COPIAR O LINK DO REPOSITORIO E USAR O GITCLONE PARA CLONAR
+
+-> CLONANDO UM REPOSITORIO
+- git clone + link repositorio
+EX: git clone git@github.com:Perkles/perkles.github.io.git
+
+MEU DIRETORIO CHAVE SSH
+cd /c/Users/Admin/.ssh
+
+## TOKEN DE ACESSO PESSOAL
+Nok token o dev gera um token q deve ser guardado. Na hora de clonar o repositorio, somente pega o link HTTPS inves do SSH e da o git clone.
+
+## COMANDOS GIT
+- git init 
+Inicia o repositorio do git
+
+- git add
+Mover arquivos e começar de fato o inicio do versionamento, conhecendo os primeiros comandos
+
+- git commit
+Cria o primeiro "commit" de um arquivo
+
+OBS:
+ls -a = flag q mostra arquivos ocultos
+
+-> GERANDO AUTOR PARA COMMIT
+git config --global user.email "needslucas944@gmail.com"
+
+git config --global user.name Lucas
+
+git commit -m "mensagem"
+
+## USANDO O TYPORA
+:chi = comando de emoticons
+
+# = hashtag muda o tamanho do titulo
+
+**negrigo** = texto negrito
+_italico_ = texto italico
+
+## CICLO DE VIDA ARQUIVOS GIT INIT = com esse comando, de fato criamos um repositorio no git dentro da pasta.
+
+Untracked = são os arquivos que o git ainda não tem conhecimento deles
+
+tracked = são os arquivos que o git tem conhecimento deles
+
+Unmodified = arquivos não modificados
+
+Modified = arquivos modificados
+
+Staged = onde ficam os arquivos que estão se preparando para poder fazer parte de um outro tipo de agrupamento.
+Esse outro agrupamento esperado e o commit
+
+OBS: Quando fazemos um commit, ele passa a integrar o meu repositorio local, que por sua vez pode ser empurrado para um remoto (github)
+
+-> Quando adicionamos um arquivo "Untracked", que o git não tinha conhecimento dele, e damos um "git add", esse arquivo é movido para "Staged"
+
+-> Assim como quando temos um arquivo modificado "modified" e damos um "git add", ele também é movido para staged
+
+-> Os arquivos vão ficar transitando entre o "working directory" e a "staging area"
+
+-> Na analogia do palco, os arquivos também se movem da "staging area", da área do palco. Fazemos esses arquivos entrarem em cena quando commitamos os mesmos, fazendo o "commit"
+
+-> Quando fazemos o commit, fazemos duas coisas
+- movemos os arquivos que estavam na área de staging. Feito o commit, o arquivo volta para o status unmodified
+- popula o repositório local. Se não tiver o commit, os arquivos não vai para o repositorio remoto
+
+## OUTRO COMANDO
+git status = mostra o status do arquivo, se está unmodified, modified etc
+
+## COMANDO PARA MOVER
+- mv + nomeArquivo ./ nomedestino
+Ex: mv Strogonoff ./receitas
+
+## COMANDO Q TRAS TODAS CONFIGURAÇÕES FEITAS
+- git config --list
+
+## COMANDO QUE RESETA AS CONFIGURAÇÕES NAME E EMAIL
+* email
+git config --global --unset user.email
+* nome
+git config --global --unset user.name
+
+## AO CRIAR UM NOVO REPOSITORIO NO GITHUB, ElE É UM REPOSITÓRIO VAZIO, E A GENTE TEM QUE IR LÁ NO NOSSO REPOSITÓRIO LOCAL E APONTAR ESSE REPOSITÓRIO LOCAL PARA O REPOSITÓRIO DO GITHUB
+ - No github o endereço e dado por uma url gerada ao criar o repositorio
+
+## EMPURRANDO OS ARQUIVOS DO REPOSITORIO LOCAL PARA O REPOSITORIO REMOTO
+* Aponta para o diretorio remoto
+- git remote add origin
+
+origin = origem do arquivo(link repositorio github)
+
+master e a branch que estamos enviando o codigo
+
+## LISTAR REPOSITORIOS REMOTOS CADASTRADOS
+* git remote -v
+
+##EMPURRA O ARQUIVO (PUSH) PARA O DIRETORIO REMOTO
+- git push origin master
+
+## RESOLVENDO CONFLITOS
+Conflitos ocorrem nos casos em que 2 devs baixam um mesmo repositorio e editam uma mesma linha. Onde o dev q fazer o commit primeiro, qd formos fazer por segundo, da um erro. A solução e fazer o push do novo arquivo do repositorio remoto, apos adicionar com git add, fazer os commmit necessario e apos empurrar pro git a versão corrigida com git push.
+
+## PUXAR O CONTEUDO DO REPOSITORIO REMOTO PARA O REPOSITIO LOCAL
+-> pull = puxar 
+- git pull origin master
+Esse comando puxa o conteudo do remoto
+
+## BAIXAR REPOSITORIO DO GITHUB
+1º Pega o link do url https e da um git clone
+EX: git clone https://github.com/python/cpython.git

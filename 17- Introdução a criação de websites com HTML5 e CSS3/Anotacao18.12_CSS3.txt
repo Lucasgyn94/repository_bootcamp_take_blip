@@ -1,0 +1,89 @@
+=> INTRODUÇÃO A CSS3
+Objetivos
+
+1. O que são seletores
+2. Conceitos básicos					
+* Por causa da criação do HTML, a necessidade de formatar páginas ficou evidente, então em 1996 foi criada a linguagem de estilo CSS.
+
+Seletores são elementos html
+EX:
+a, p, h1, h3 {
+  color: blue;
+  font-size: 14px;
+}
+as letras "a" "p" "h1" "h3" são seletores
+
+=> stylesheet = diz ao navegador qual tipo de arquivo estamos adicionando.
+
+=> BOX MODEL
+Quando estamos criando o layout de um site o navegador representa cada elemento HTML como uma caixa retangular, isso é o box-model. E com CSS nós alteramos a aparência dessa caixa (largura, altura, cor de fundo, etc.). Essa caixa é composta por 4 áreas: o conteúdo, o padding, a borda e a margem.
+
+- As margens (margin) são espaçamentos entre elementos;
+- As bordas (border) ;
+- O padding é um espaçamento entre as bordas e o conteúdo, a diferença para as margens é que declarações de imagem de fundo funcionam nele;
+- O conteúdo (content) é o que o seu bloco representa, um texto, uma imagem, um vídeo;
+
+=> PROPRIEDADE BORDER
+.post {
+  border-top: 2px dotted green;
+  border-right: 4px dashed pink;
+  border-bottom: 1px solid purple
+  border-left: 4px dotted cyan
+}
+
+-> PROPRIEDADES ALTERNATIVAS
+- "border-width" para largura
+- "border-color" para cor
+- "border-style" para o contorno da borda
+- "border-radius" permite arredondar os campos de um elemento;
+
+=> ESTILIZAÇÃO TEXTO
+
+-> font-family
+altera a fonte do nosso texto
+
+-> font-style
+altera a aparência do nosso texto
+
+-> font-weight
+altera o peso do texto
+
+-> text-transform
+alterna o texto entre maisculas e minusculas
+
+ - valor uppercase
+coloca todo texto em caixa alta
+ - valor lowercase
+coloca todo texto em caixa baixa
+ - valor capitalize		Coloca todas as primeiras letras de cada palavra em maiscula
+
+-> text-decoration
+é muito usado para dar destaque em um texto, pois ele coloca linhas.
+- underline
+coloca uma linha abaixo da palavra
+
+- overline
+coloca uma linha acima
+
+- line-through	
+coloca uma linha ao centro, cortando essa palavra;
+
+=> ESTILIZANDO LISTAS
+Para alternar o marcadador das listas usamos list-style-type
+ square = quadrado
+ upper-roman altera marcador de uma lista para algarismo romano maisculo
+
+"\1F44D" altera marcador para um simbolo;
+
+=> DIMENSÃO E ALINHAMENTO
+* Width e Height
+Serve para ajustar altura e largura respectivamente
+
+* Max-width e max-height
+altura maxima e largura maxima que os elementos pode ter
+
+* Margin
+Serve para alinhar um elemento automaticamente
+
+* Text align
+serve para alinhar textos 

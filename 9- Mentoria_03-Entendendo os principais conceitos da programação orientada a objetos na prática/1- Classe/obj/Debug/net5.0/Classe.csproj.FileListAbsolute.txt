@@ -1,0 +1,16 @@
+C:\Users\Admin\Desktop\DigitalOne\9- Mentoria_03-Entendendo os principais conceitos da programação orientada a objetos na prática\Classe\bin\Debug\net5.0\Classe.exe
+C:\Users\Admin\Desktop\DigitalOne\9- Mentoria_03-Entendendo os principais conceitos da programação orientada a objetos na prática\Classe\bin\Debug\net5.0\Classe.deps.json
+C:\Users\Admin\Desktop\DigitalOne\9- Mentoria_03-Entendendo os principais conceitos da programação orientada a objetos na prática\Classe\bin\Debug\net5.0\Classe.runtimeconfig.json
+C:\Users\Admin\Desktop\DigitalOne\9- Mentoria_03-Entendendo os principais conceitos da programação orientada a objetos na prática\Classe\bin\Debug\net5.0\Classe.runtimeconfig.dev.json
+C:\Users\Admin\Desktop\DigitalOne\9- Mentoria_03-Entendendo os principais conceitos da programação orientada a objetos na prática\Classe\bin\Debug\net5.0\Classe.dll
+C:\Users\Admin\Desktop\DigitalOne\9- Mentoria_03-Entendendo os principais conceitos da programação orientada a objetos na prática\Classe\bin\Debug\net5.0\ref\Classe.dll
+C:\Users\Admin\Desktop\DigitalOne\9- Mentoria_03-Entendendo os principais conceitos da programação orientada a objetos na prática\Classe\bin\Debug\net5.0\Classe.pdb
+C:\Users\Admin\Desktop\DigitalOne\9- Mentoria_03-Entendendo os principais conceitos da programação orientada a objetos na prática\Classe\obj\Debug\net5.0\Classe.csproj.AssemblyReference.cache
+C:\Users\Admin\Desktop\DigitalOne\9- Mentoria_03-Entendendo os principais conceitos da programação orientada a objetos na prática\Classe\obj\Debug\net5.0\Classe.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin\Desktop\DigitalOne\9- Mentoria_03-Entendendo os principais conceitos da programação orientada a objetos na prática\Classe\obj\Debug\net5.0\Classe.AssemblyInfoInputs.cache
+C:\Users\Admin\Desktop\DigitalOne\9- Mentoria_03-Entendendo os principais conceitos da programação orientada a objetos na prática\Classe\obj\Debug\net5.0\Classe.AssemblyInfo.cs
+C:\Users\Admin\Desktop\DigitalOne\9- Mentoria_03-Entendendo os principais conceitos da programação orientada a objetos na prática\Classe\obj\Debug\net5.0\Classe.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\DigitalOne\9- Mentoria_03-Entendendo os principais conceitos da programação orientada a objetos na prática\Classe\obj\Debug\net5.0\Classe.dll
+C:\Users\Admin\Desktop\DigitalOne\9- Mentoria_03-Entendendo os principais conceitos da programação orientada a objetos na prática\Classe\obj\Debug\net5.0\ref\Classe.dll
+C:\Users\Admin\Desktop\DigitalOne\9- Mentoria_03-Entendendo os principais conceitos da programação orientada a objetos na prática\Classe\obj\Debug\net5.0\Classe.pdb
+C:\Users\Admin\Desktop\DigitalOne\9- Mentoria_03-Entendendo os principais conceitos da programação orientada a objetos na prática\Classe\obj\Debug\net5.0\Classe.genruntimeconfig.cache

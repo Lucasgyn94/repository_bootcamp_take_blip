@@ -1,0 +1,44 @@
+/** metodo que configura o entity framework **\
+
+DbContextOptionsBuilder = Construtor de opções de contexto
+
+/* OnConfiguring = na configuracao
+*/
+protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+{
+
+/*
+Adicionando string de conexão
+*/
+$         optionsBuilder.UseSqlServer(connectionString:@"server=(loca1ldb)\mssqllocaldb; Database = Cursomvc; Integrated Security = true");
+        }
+    }
+}
+
+-------------------
+
+## classe contexto aponta pro bano de dados
+$ services.AddDbContext<Context>(); // Deixa visualizavel a classe Context para o banco de dados; 
+
+
+
+# EXECUTAR O MIGRATIONS PARA CRIAR A TABELA NO BANCO DE DADOS
+
+-> COMANDO
+$ Add-Migration nomePasta
+Ex:
+Add-Migration InitialCreate
+Cria a tabela initialCreate
+OBS:
+O migration cria a tabela no banco de dados
+
+2º Passo: Cria banco de dados
+$ Update-Database
+
+
+Shared.Layout.cshtml = pagina principal do site, onde contem todos os menus
+
+DbContext = uma interface do entity framework
+
+
+$ Update-Database

@@ -1,0 +1,16 @@
+C:\Users\Admin\Desktop\DigitalOne\9- Mentoria_03-Entendendo os principais conceitos da programação orientada a objetos na prática\2- Encapsulamento\bin\Debug\net5.0\2- Encapsulamento.exe
+C:\Users\Admin\Desktop\DigitalOne\9- Mentoria_03-Entendendo os principais conceitos da programação orientada a objetos na prática\2- Encapsulamento\bin\Debug\net5.0\2- Encapsulamento.deps.json
+C:\Users\Admin\Desktop\DigitalOne\9- Mentoria_03-Entendendo os principais conceitos da programação orientada a objetos na prática\2- Encapsulamento\bin\Debug\net5.0\2- Encapsulamento.runtimeconfig.json
+C:\Users\Admin\Desktop\DigitalOne\9- Mentoria_03-Entendendo os principais conceitos da programação orientada a objetos na prática\2- Encapsulamento\bin\Debug\net5.0\2- Encapsulamento.runtimeconfig.dev.json
+C:\Users\Admin\Desktop\DigitalOne\9- Mentoria_03-Entendendo os principais conceitos da programação orientada a objetos na prática\2- Encapsulamento\bin\Debug\net5.0\2- Encapsulamento.dll
+C:\Users\Admin\Desktop\DigitalOne\9- Mentoria_03-Entendendo os principais conceitos da programação orientada a objetos na prática\2- Encapsulamento\bin\Debug\net5.0\ref\2- Encapsulamento.dll
+C:\Users\Admin\Desktop\DigitalOne\9- Mentoria_03-Entendendo os principais conceitos da programação orientada a objetos na prática\2- Encapsulamento\bin\Debug\net5.0\2- Encapsulamento.pdb
+C:\Users\Admin\Desktop\DigitalOne\9- Mentoria_03-Entendendo os principais conceitos da programação orientada a objetos na prática\2- Encapsulamento\obj\Debug\net5.0\2- Encapsulamento.csproj.AssemblyReference.cache
+C:\Users\Admin\Desktop\DigitalOne\9- Mentoria_03-Entendendo os principais conceitos da programação orientada a objetos na prática\2- Encapsulamento\obj\Debug\net5.0\2- Encapsulamento.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin\Desktop\DigitalOne\9- Mentoria_03-Entendendo os principais conceitos da programação orientada a objetos na prática\2- Encapsulamento\obj\Debug\net5.0\2- Encapsulamento.AssemblyInfoInputs.cache
+C:\Users\Admin\Desktop\DigitalOne\9- Mentoria_03-Entendendo os principais conceitos da programação orientada a objetos na prática\2- Encapsulamento\obj\Debug\net5.0\2- Encapsulamento.AssemblyInfo.cs
+C:\Users\Admin\Desktop\DigitalOne\9- Mentoria_03-Entendendo os principais conceitos da programação orientada a objetos na prática\2- Encapsulamento\obj\Debug\net5.0\2- Encapsulamento.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\DigitalOne\9- Mentoria_03-Entendendo os principais conceitos da programação orientada a objetos na prática\2- Encapsulamento\obj\Debug\net5.0\2- Encapsulamento.dll
+C:\Users\Admin\Desktop\DigitalOne\9- Mentoria_03-Entendendo os principais conceitos da programação orientada a objetos na prática\2- Encapsulamento\obj\Debug\net5.0\ref\2- Encapsulamento.dll
+C:\Users\Admin\Desktop\DigitalOne\9- Mentoria_03-Entendendo os principais conceitos da programação orientada a objetos na prática\2- Encapsulamento\obj\Debug\net5.0\2- Encapsulamento.pdb
+C:\Users\Admin\Desktop\DigitalOne\9- Mentoria_03-Entendendo os principais conceitos da programação orientada a objetos na prática\2- Encapsulamento\obj\Debug\net5.0\2- Encapsulamento.genruntimeconfig.cache

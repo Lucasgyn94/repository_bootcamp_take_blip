@@ -1,0 +1,21 @@
+Linguagem de programação é uma linguagem escrita e formal que especifica um conjunto de instruções e regras usadas para gerar programas (software). Um software pode ser desenvolvido para rodar em um computador, dispositivo móvel ou em qualquer equipamento que permita sua execução.
+
+As linguagens se dividem em:
+* Alto nível
+São aquelas cuja sintaxe se aproxima mais da linguagem humana e se distância da linguagem da máquina.
+Ex: java, c, c++, c#, javascript etc
+
+* Baixo nível
+É aquela cuja sintaxe se aproxima mais da linguagem da máquina. E necessário ter o conhecimento direto da arquitetura do computador para fazer algo.
+Ex: Assembly
+
+# As linguagens podem ser compiladas ou interpretadas
+
+* Compiladas
+É uma linguagem de programação em que o código fonte, é executado diretamente pelo sistema operacional ou pelo processador, após ser traduzido por meio de um processo chamado compilação.
+Ex: c++, c, Delphi
+
+* Interpretadas
+É uma linguagem de programação em que o código fonte é executado por um programa de computador chamado interpretador, que em seguida é executado pelo sistema operacional ou processador.
+Ex: javascript, php, python
+

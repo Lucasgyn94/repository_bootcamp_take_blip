@@ -1,0 +1,62 @@
+body {
+    background: #f7f7f7;
+    font-family: Verdana;
+    max-width: 900px; /* largura pagina*/
+    margin: auto; /* centraliza a pagina para o conteudo n ficar todo a esquerda*/
+}
+
+.photo {
+    border: 1px solid #505050;
+    border-radius: 50px;
+}
+
+#title, .subtitle, .post_title {
+    color: #505050
+}
+
+#tittle {
+    font-size: 40px; /* tamanho da fonte*/
+    text-transform: uppercase; /* caixa alta*/
+}
+
+a {
+    text-decoration: line-through; /* linhas ao centro */
+    color: #505050
+}
+
+/* muda tamanho post*/
+.post_title{
+    font-size: 16px;
+    font-size: italic;
+    margin: 0;
+    margin-bottom: 15px; /* bottom = inferior/ baixo*/
+}
+
+.post {
+    background: #fff;
+    padding: 15px; /**padding = preenchimento*/
+    border: 3px solid #505050;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+
+.post_content {
+    margin: 0;
+    margin-bottom: 15px;
+    text-transform: capitalize;
+    text-align: justify;
+}
+
+.post_image {
+    margin-bottom: 15px;
+    width: 100%; /* Largura da foto = 100% de acordo com corpo*/
+}
+
+.contacts_list {
+    list-style-type: none;
+    padding-left: 15px;
+}
+
+.contacts_list li a {
+    text-decoration: none;
+}

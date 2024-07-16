@@ -1,0 +1,183 @@
+=> ENTITY FRAMEWORK
+O Entity framework é uma ORM (Mapeador relacional de objeto) que permite que os desenvolvedores de .NET trabalhem com um banco de dados usando objetos .NET. Elimina a necessidade da maioria do código de acesso a dados que os desenvolvedores geralmente precisam gravar;
+
+O Entity Framework possui três linhas principais de utilização:
+ * Database First
+ * Model First
+ * Code First
+
+-> Database First
+Tem como objetivo ler o banco de dados e aplicar uma engenharia reversa carregando as classes que representarão as tabelas do banco;
+
+-> Model First
+O Model First nos permite gerar primeiro um modelo e a partir dele gerar nossa base de dados.
+Essa montagem de modelo é feita através do EDM Designer utilizando os componentes que ele nos disponibiliza sendo os mais comuns "Entity" e "Association".
+
+-> Code First
+Na abordagem Code First você cria primeiro as suas classes de entidade e deixa para o Entity Framework a responsabilidade de criar o banco de dados.
+Essas classses são conhecidas como classes POCO (Plan Old CLR Objects) que são classes que utlizam apenas os tipos do .NET Framework sendo independente de qualquer outro framework inclusive do "Entity", essas classes podem ser utilizadas por outros projetos que utilizem ou não o Entity Framework.
+
+==>>> PARTE 2
+=> Data Annotations
+
+O Data Annotations é um recurso que permite que você adicione atributos e métodos em nossas classes para alterar convenções padrão e personalizar alguns comportamentos.
+
+-> Principais Atributos
+* Required
+Significa campo obrigatório
+
+* RegularExpression
+Valida o campo por expressão
+
+* Display
+Nome a ser mostrado em todas as interfaces de usuário
+
+* StringLength
+Determina a quantidade máxima de caracteres que poderá ser informada.
+
+* MinLength
+Determina a quantidade mínima de caracteres que poderá ser informada.
+
+ * DisplayFormat
+Formato a ser exibido nas interfaces de usuário
+
+* Range
+Define a faixa de dados aeita pela propriedade.
+
+==>>> PARTE 3
+=> Migrations
+O Migrations é um recurso que oferece uma maneira de atualizar de forma incremental o esquema de banco de dados para manter em sincronia com o modelo de classe do seu objeto preservando os dados existentes no banco de dados.
+Com o Migrations também é possível realizar downgrade caso você deseje voltar o seu banco de dados para a versão anterior em que se encontrava, além de manter um histórico de alterações.
+
+Antes do Entity Framework contar com suporte ao Migrations existia apenas três estratégias para criação de banco de dados, quais sejam:
+* CreateDatabaseifNotExists
+* DropCreateDatabaseAlways
+*DropCreateDatabaseModelChanges 
+
+-> CreateDatabaseifNotExists
+Nessa estratégia o Entity Framework somente cria o banco de dados se ele não existir, ou seja, se você estiver utilizando essa estratégia e realizar uma alteração no seu modelo de classes você teria que remover o seu banco de dados e cria-lo novamente perdendo, assim, todos os seus dados.
+
+-> DropCreateDatabaseAlways
+Nesse modelo o Entity Framework apaga o banco de dados e recriar sempre que o projeto é executado fazendo com que você perca todos os seus dados ao iniciá-lo.
+
+-> DropCreateDatabaseModelChanges 
+Nessa estratégia o Entity Framework apaga o seu banco de dados e o recria sempre que identificar uma alteração no seu modelo de classes, isso também faz com que você perca todos os seus dados, porém apenas quando você realizar a alteração do seu modelo
+
+============================
+
+==>>> PARTE 1
+-> Padrão MVC
+O MVC é um padrão de arquitetura que divide a aplicação em três camadas: a visão (view), o modelo (model) e o controlador (controller)
+
+O MVC é um padrão muito utilizado devido a sua arquitetura que possibilita separar o projeto em camadas onde cada uma delas executa o que lhe é definido e nada mais.
+Esse padrão pode ser aplicado em diversos tipos de projetos como, por exemplo, desktop, web e mobile.
+
+O MVC traz como benefício o isolamento das regras de negócios da interface e do usuário, o que permite que exista várias interfaces de usuários que podem ser modificadas sem afetar a regra de negócio.
+
+-> CAMADA MODEL
+é a camada responsável pela leitura e escrita de dados, e também de suas validações.
+- recebe e ler dados
+- valida dados
+
+-> CAMADA VIEW
+é a camada de interação com o usuário. Ela apenas faz a exibição dos dados, sendo ela por meio de um HTML ou XML.
+- responsável pela exibição de dados
+
+-> CAMADA CONTROLLER
+é a camada responsável por receber todas as requisições e por controlar qual model usar e qual view será mostrado ao usuário
+
+===>> PARTE 2: ROUTES
+
+-> ASP.NET Web Forms
+No modelo ASP.NET Web Forms as requisições do navegador eram enviadas para páginas, que deveriam existir fisicamente, com isso cada URL deveria ter uma página física que a represente.
+
+-> ASP.NET MVC
+Já no modelo ASP.ET MVC as requisições do navegador são enviadas para uma AÇÃO da Controller, tirando a necessidade de cada URL possuir um arquivo físico.
+
+-> ROUTES
+Quando uma aplicação ASP.NET MVC é criada já é configurado um padrão de rota default:
+EX:
+url: "{controller}/{action}/{id}",
+defaults: new { controller = "Home", action = "Index", id UrlParameter.Optional
+
+Esse padrão já atende a maioria das necessidades, porém é possível criar padrões personalizados.
+
+-> CUSTOM ROUTES
+Para determinadas necessidades podemos criar rotas personalizadas, isso permite uma maior flexibilidade e que seja possível gerar URLs mais amigáveis para o usuário o que torna a aplicação mais acessível.
+EX:
+url: "student/{id}/{name}/{standardId}",
+defalts: new {controller = "Student", action = "Index", id = UrlParameter.Optional, name = UrlParameter.Optional, standardld = UrlParameter.Optional},
+
+-EXEMPLO
+Exemplo de uma URL utilizando a rota default:
+
+http://localhost:1234/home/index/100
+
+home = Controller
+index = Action method
+100 = id parameter value
+
+http://localhost:1234/home/index/
+
+home = Controller
+index = Action method
+
+===>> PARTE 3: Action Results
+
+O Action Result é o resultado de uma Ação processada por uma controller, o action result possui diversos tipos.
+
+===> PARTE 4: HTTP Verbs
+Os HTTPS Verbs são métodos do protocolo HTTP que informam ao servidor qual ação ele deve executar.
+* GET
+- Buscar recursos
+- Cache
+
+* POST
+- Criar um novo recurso
+
+* PUT/PATCH
+- Atualizar um recurso existente
+
+* DELETE
+- Remover um recurso
+
+===>> PARTE 5: Razor
+
+O Razor é uma View Engine utilizada no ASP.ET MVC. O seu principal objetivo é simplificar o desenvolvimento de aplicações ASP.NET pois ele deixa o código mais simples, fácil e legível.
+
+-> BENEFÍCIOS
+Como benefícios principais temos:
+* Menor curva de aprendizagem, por ser baseado na linguagem de programação C#
+
+* Por possuir uma sintaxe limpa ele requer que o desenvolvedor digite menos para chegar a um resultado;
+
+* O Visual Studio possui IntelliSense para páginas razor o que nos dá uma maior produtividade.
+
+===>> PARTE 6: Middlewares
+Middlewares são componentes (classes) que é executado em todas as solicitações na aplicação ASP.NET.
+Normalmente existem vários middlewares na aplicação e nós definimos a ordem em que são executados.
+Cada middleware adiciona ou modifica a solicitação http e pode passar o controle para o proximo middleware.
+
+===>> PARTE 7: Startup
+
+Como o próprio nome diz, a classe Startup.cs é responsável por ser o ponto inicial do projeto.
+Dentro dela existem métodos que são responsáveis por configurar o projeto. São eles:
+* CunfigureServices
+* Configure
+
+-> ConfigureServices
+O método ConfigureServices é responsável por registrar as classes ao contêiner de injeção de dependência, após isso a classe poderá ser usada em qualquer lugar da aplicação desde que seja incluída no construtor da classe em que deseja usar.
+
+-> Configure
+O Configure controla o pipeline da aplicação, é nesse método que são especificados os middlewares que serão utilizados. Se nada for colocado nesse método, nem o MVC funcionará, pois não foi indicado a aplicação, o que utilizar.
+Deve ser adicionado apenas os middlewares que forem ser utilizados caso contrário poderá acontecer a perda de perfomance.
+
+=> COMANDO PARA INSTALAR PACOTE
+Install-Package Microsoft.EntityFrameworkCore.SqlServer
+
+PAREI EM 15 MIN
+
+===>> Add-Migration + nomePasta
+Ex:
+Add-Migration InitialCreate
+* Cria o migration initialCreate

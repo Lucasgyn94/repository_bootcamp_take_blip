@@ -1,0 +1,171 @@
+## ENTENDENDO OS PRINCIPAIS CONCEITOS DE PROGRAMAÇÃO ORIENTADA A OBJETOS
+
+-> OBJETIVOS DA AULA
+1- Entender o que é POO
+2- Entender pilares e aplicá-los
+
+=> POO
+* Programação orientada a objetos é uma metodologia de desenvolvimento de software.
+
+* É um paradigma de programação em que se usa objetos para representar e processar dados.
+
+* Tem como principal objetivo facilitar a modelagem e desenvolvimento de sistemas, através da intereção entre objetos.
+
+-> Benefícios
+* Confiável
+ - O isolamento entre as partes gera software seguro. Ao alterar uma parte, nenhuma outra é afetada.
+
+* Oportuno
+ - Ao divir tudo em partes, várias delas podem ser desenvolvidas em paralelo.
+
+* Manutenível
+ - Atualizar um software é mais fácil. Uma pequena modificação vai beneficiar todas as partes que usarem o objeto.
+
+* Extensível
+ - O softwares não é estático. Ele deve crescer para permanecer útil.
+
+* Reutilizável
+- Podemos utilizar objetos de um sistema que criamos em outro sistema futuro.
+
+* Natura
+- É algo mais fácil de entender. Você se proecua mais com a funcionalidade do que nos detalhes de implementação.
+
+-> OBJETO
+Coisa material ou abstrata que pode ser percebida pelos sentidos e descrita por meio de suas caracteristicas, comportamentos e estado atual.
+Exemplos DE OBJETOS: Carro, controle, mouse, reuniao
+
+EX: 
+* Pegando Um controle remoto como exemplo podemos ter: 
+- Característica: cor, botões, tela.
+- Comportamento: Ligar, Desligar, gravar, pausar
+- Estado atual: velho, bateria, descarregado, carregado etc
+
+* Pegando uma reunião como objetos temos:
+- Características: horário, sala, pessoas
+- Comportamento: Pode estar atrasada, pode ser adiada, pode ser cancelada.
+- Estado atual: está acontecendo, não está.
+
+OBS IMPORTANTE:
+Em POO um objeto sempre tem de satisfazer a 3 critérios:
+* Objeto Caneta
+-> Coisas que eu tenho (Atributos)
+ - Modelo
+ - Cor
+ - Carga
+
+-> Coisas que eu faço (Métodos)
+ - Escrever
+ - Rabiscar
+ - Tampar
+
+-> Como estou agora? (Estado)
+ - Esrevendo
+ - Destampada
+
+=> CLASSE
+* Define os atributos e métodos comuns que serão compartilhados por um objeto.
+
+=> OBJETO
+* É uma instância de classe
+
+=> PROJETO CARRO
+## Método Construtor
+Um construtor e quando eu quero inicializar os atributos das propriedades.
+O método construtor e passado  usando a visibilidade(public, privada etc) + nomeConstrutor()
+Ex:
+$ public Veiculo ()
+{
+
+}
+
+## INICIALIZANDO VALORES METODO CONSTRUTURO
+$ public veiculo (string marca, string modelo, string cor, string combustivel)
+{
+this._marca = marca;
+this._modelo = modelo;
+this._cor = cor;
+this._combustivel = combustivel;
+}
+
+=> PARTE 2
+## PILARES
+A Programação orientada a objetos tem 4 pilares principais:
+* ABSTRAÇÃO
+* ENCAPSULAMENTO
+* HERANÇA
+* POLIMORFISMO
+
+-> ENCAPSULAMENTO
+
+* Ocultar partes independentes da implementação, permitindo construir partes invisíveis ao mundo exterior.
+
+* A ideia de uma "caixa preta"
+
+* Benefícios
+- Tornar as alterações invisíveis.
+- Facilitar a reutilização de código.
+- Reduza os efeitos colaterais.
+=======================
+-> ABSTRAÇÃO
+* É nesse momento que abstraimos o mundo real em nossa classe.
+
+* Interação apenas com atributos e métodos necessários de um projeto.
+
+* Abstração é uma extensão do encapsulamento. Por exemplo, você não precisa saber todos os detalhes de como funciona o motor para dirigir um carro.
+
+## OBS: Não e necessário mostrar para toda a classe todos os processos e acões, para isso existem as interfaces.
+-> INTERFACES
+é um contato que agente mostra o que realmente a pessoa vai precisar, contém os métodos que precisam ser chamados por essa classe e nada mais que isso.
+
+-> HERANÇA
+* Mecanismo que permite que uma nova classe seja descrita a partir de outra classe já existente, herdando as suas propriedades.
+EX:
+	Mãe
+         |
+         |
+Filha1----------Filha2
+
+* Um classe filha pode puxar características e comportamentos de uma classe mãe.
+
+OBS:
+CLASSES ABSTRATAS NÃO PODEM SER INSTACIADAS.
+Quando eu torna a classe Veículo abstrata por exemplo, eu não posso ter um objeto veículo mais.
+Então crio uma classe Carro que herda as características do veículo.
+
+OBS2: Um avião apesar de pertencer a mesma classe Veiculos, não pode ter a mesma maneira de ligar, e ai que entra a idéia de "Polimorfismo".
+
+-> POLIMORFISMO
+POLI = muitas
+MORFO = formas
+
+* Permite que um mesmo nome represente vários comportamentos diferentes.
+
+* Usando a herança, os objetos podem substituir comportamentos de superclasse compartilhadas, com comportamentos de subclasses específicas.
+
+## OVERRIDE
+Para sobreescrever uma classe já definida usamos o método "override"
+EX:
+public override void ligar()
+{
+  Console.WriteLine("Ligar avião");
+}
+Para que o OVERRIDE possa funcionar corretamente sobreescrevendo um metodo da classe herdada, tendo como base a edição do modo de ligar do Veiculo, vamos a classe Veiculo e colocamos o método ligar() como virtual.
+Ex:
+public virtual void Ligar()
+{
+}
+Assim, se uma subclasse que esta herdando uma classe quiser sobreescrever tal metodo ligar, ela pode ficar a vontade.
+
+## FAZENDO UMA LISTA UTILIZANDO POLIMORFISMO
+List<nomeInstancia> + nomeLista = new List<nomeInstancia> 
+EX:
+$ List<Veiculo> lista = new List<Veiculo>();
+$ lista.Add(carro);
+$ lista.Add(aviao);
+
+PAREI EM 1:04:57
+
+________________________
+
+// O IEnumerable<> = Expõe um enumerador que dá suporte a uma iteração simples em uma coleção não genérica. é a interface base para todas as coleções não genéricas que podem ser enumeradas
+// É uma prática recomendada implementar IEnumerable classes de coleção com a sintaxe foreach

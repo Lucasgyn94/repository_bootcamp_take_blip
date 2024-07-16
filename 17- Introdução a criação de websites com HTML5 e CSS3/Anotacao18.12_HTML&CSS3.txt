@@ -1,0 +1,80 @@
+=> HTML 
+-> Criada por Tim Berners-Lee em 1991
+
+* HTML 1 - 1991
+* HTML 2 - 1995
+* HTML 3 - 1997
+* HTML 4 - 1997
+* HTML 5 - 2014
+
+=> ELEMENTO HTML
+
+<h1 class="Titulo">Título</h1>
+
+-> Estrutura Básica
+
+<!DOCTYPE html>
+<html>    
+   <head>        
+   <meta>        <title></title>    
+   </head>    
+   <body>      
+   </body>
+</html>
+</!doctype>
+
+=> TEXTOS E LINKS
+<h1> Título da Pagina </h1>
+<h2> Título da Seção </h2>
+<h3> Título de Artigo </h3>
+<p> Conteúdo do artigo. </p>
+
+p = representa um paragrafo, podemos adicionar videos, textos, imagens etc.
+
+=> ANCORA
+<a> </a> = representa uma ancora e interliga vários conteúdos na web.
+Possue atributos dos quais:
+* href
+É o hiperlink para onde a âncora está apontando.
+Ex: pagina do meu site ou site externo, ou até emails e telefones.
+
+* target
+serve para indicar como esse nosso link vai ser aberto
+- valor = _blank;
+_blank faz abrir esse link em uma nova aba
+
+= IMAGENS
+São representadas em pelo elemento "img";
+
+Não usa tag de fechamento;
+
+O elemento img e bem simples e possui 2 atributos próprios, o o source (src) e o "alt"
+$ <img>
+$ <img src="img/avatar.jpg">
+$ <img alt="Foto de Lucas vilaboim">
+
+* o "src" e obrigatorio e ele guarda o caminho da imagem. Pode ser uma imagem dentro do meu proprio site ou outro lugar.
+
+* o "alt", apesar de não ser obrigatório, e altamento recomendado para melhorar a sensibilidade. Ele mostra a descrição da foto quando não e carregada, e leitores de telas usam essa descrição para mostrar para os usuarios o que aquela imagem significa.
+
+
+=> LISTAS
+li, ul e ol;
+
+Listas servem para agrupar coleção de itens, como lista de ingredientes, ou lista de contatos.
+
+<ul>
+item 1
+item 2
+O elemento "ul" representa uma lista em que a ordem dos itens não é importante.
+
+<ol>
+1. Item 1
+2. Item 3
+No elemento "ol", a ordem dos itens é importante, e são representados por letras, números e algarismos romanos.
+
+<li>
+E um item da lista;
+
+
+

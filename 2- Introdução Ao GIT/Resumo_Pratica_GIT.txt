@@ -1,0 +1,245 @@
+Sumário:
+
+#1 git config
+#2 git init
+#3 git clone
+#4 git pull
+#5 git add
+#6 git commit
+#7 git status
+#8 git push
+#9 git branch
+#10 git checkout
+#11 git merge
+#12 git help
+
+
+#1 - git config
+
+Passado o procedimento de instalação, o primeiro momento é o de configuração de user, com a definição do seu nome e de seu e-mail para que tudo o que faça dali pra frente seja identificado, você faz isso por meio dos comandos git config:
+
+$ git config --global user.name "Seu Nome"
+$ git config --global user.email seuemail@seuemail.com.br
+
+
+A opção "--global" faz com que você não precise fazer este procedimento sempre que vai acessar um projeto no Git.
+
+
+
+#2 - git init
+
+Para criar o seu primeiro repositório, basta utilizar o comando:
+
+$ git init
+
+
+E se você já tiver o nome desse projeto em mente, você pode executar diretamente no comando:
+
+$ git init <digite aqui o nome do seu projeto>
+
+
+Ou então...
+
+#3 - git clone
+
+Caso o projeto que queira trabalhar ou aperfeiçoar já exista no GitHub, não tem problemas, com apenas uma linha você pode trazê-lo para sua máquina e ter ele ali à sua disposição*.
+
+*Lembre-se sempre de ler os README.md de cada projeto para saber se não será preciso instalar mais alguma dependência, biblioteca e afins.
+
+O código para clonar um projeto é:
+
+$ git clone <url do projeto>
+
+
+#4 - git pull
+
+Para baixar algum conteúdo, que por ventura tenha sido adicionado ao repositório remoto, em sua máquina, basta executar o seguinte comando:
+
+$ git pull
+Ele atualizará todo o conteúdo para a versão mais atual.
+
+
+
+#5 - git add
+
+Editou o seu código, adicionou uma funcionalidade, fez alguma alteração importante e não quer perder? O git add é o comando que você precisa utilizar para gravar as modificações que seu código sofreu, através do:
+
+$ git add <nome do arquivo>
+Caso queira salvar apenas as mudanças de um determinado arquivo, ou:
+
+$ git add *
+Para salvar apenas as modificações dos arquivos novos ou alterados, exceto aqueles que comecem com "." (ex.: .gitignore), como também pode utilizar o comando:
+
+$ git add .
+Que salva todos os arquivos novos e/ou alterados, incluindo aqueles que começam o "."
+
+
+
+#6 - git commit
+
+Sua função é a de armazenar o conteúdo que você acabou de salvar em um novo commit, agregando a ele a mensagem que você escreveu referente à mudança, como vemos:
+
+$ git commit -m "Sua mensagem aqui"
+
+
+#7 - git status
+
+Através deste comando você consegue visualizar quais arquivos estão sendo monitorados pelo Git e o seu respectivo status. Por exemplo, se ele já foi adicionado, se está comitado ou não, etc.
+
+$ git status
+
+
+#8 - git push
+
+Beleza, terminou de escrever seu código e quer subir ele para o repositório remoto? E agora? O git push está aí para isso, por meio dele tudo o que estiver comitado em seu projeto local é "empurrado" para a o remoto.
+
+$ git push
+
+
+#9 - git branch
+
+Decidiu focar em uma parte do seu código ou quer tentar implementar algo e está com medo disso bugar o seu projeto todo? Dê um git branch para criar uma ramificação de seu código, mais abaixo veremos meios de integrar o feito neste novo ramo ao main de seu repositório.
+
+$ git branch <nome da ramificação>
+
+
+#10 - git checkout
+
+Criou uma ou mais branches e precisa navegar entre elas? Simples, com esse comando isso é possível.
+
+$ git checkout <nome da branch de destino>
+
+
+#11 - git merge
+
+Chegou a hora de unificar o que você fez em uma branch e o resultado foi positivo, assim você consegue levar o trabalho feito de uma ramificação para outra através desse comando:
+
+$ git merge <nome da branch de destino>
+
+
+#12 - git help
+
+Existem diversos outros comandos e se você ficar na dúvida para que serve algum deles, o Git tem um comando especial para te ajudar.
+
+$ git help <comando da dúvida>
+
+=======================
+
+-> GIT é um controle de versionamento.
+- facilmente acessado de qualquer lugar
+- permite ramificações
+- permite inspecionar toda alteração que se passa no código
+
+GITHUB é o lugar onde armazenamos as informações (remoto)
+
+Temos uma branch, que por padrão chamamos de Master.
+
+git log = comando que fala o que agente fez, os commit dentro do codigo
+
+## CRIAR RAMIFICAÇÕES
+$ git branh <nome-arquivo>
+
+$ git branch -l
+Mostra a branch que estamos trabalhando e a que foi criada
+
+## MUDAR DE BRANCH
+$ git checkout <nome branch>
+
+## MERGE
+Quando mudamos de branch e fazer o processo de acionar naquela branch, o arquivo criado só fica visivel para aquela branch, para que seja visivel também para a branch master, devemos fazer o "merge". Então saimos da branch atual, vamos para a master usando "git checkout" e fazemos o merge com o seguinte comando.
+$ git merge <nome-branch>
+
+## COMANDO PARA SAIR DO GITLOG
+$ q
+
+## COMANDO QUE CRIA BRANCH E JA MUDA PRA ELA AUTOMATICAMENTE
+$ git checkout -b adicionar-js
+
+## COMANDO PARA INSTALAR BIBLIOTECA JQUERY VIA CMD
+$ npm i jquery --save-dev
+
+node_modules dentro do gitignore = ignora todos os arquivos da pasta
+
+## COMANDO QUE SALVA O QUE ESTAMOS FAZENDO DENTRO DE UM REPOSITORIO/ ESPAÇO TEMPORARIO
+$ git stash list
+
+## VOLTA AO ESTADO QUE ESTAMOS
+$ git stash apply
+
+-> FORK
+fork = pega um repositorio remoto e faz uma versão na minha maquina local
+
+## FAZER O GITHUB OLHAR PRO MEU REPOSITORIO LOCAL (ADICIONA A ORIGEM REMOTA QUE OS ARQUIVOS LOCAIS IRÃO)
+1° Cria o repositorio no github
+2° git remote add origin <link-repositorio>
+
+* git remote -v
+
+fetch = comando para baixar tudo que está listado do repositorio remoto
+
+PUSH é basicamente enviar os arquivos para o repositorio
+
+PULL e basicamente puxar do repositorio remoto para o local
+$ git pull origin master
+
+## ADICIONANDO REPOSITORIO REMOTO NA MINHA MAQUINA LOCAL
+$ git clone <endereço-HTTPS>
+
+## POR ULTIMO TEMOS QUE FAZER UMA DESCRIÇÃO DO NOSSO PROJETO VIA "add README" no github
+
+==========================
+
+## RESUMO LIVE
+
+Códigos
+- Git init
+- Git add <nome do arquivo>, com este comando adiciono arquivos que estão criados no meu workspace para o staging area
+
+- git commit -m 'mensagem de envio'
+
+- .gitignore
+
+- git branch, git checkout, git branch -D list
+
+- git stash / git stash drop stash@{n}
+
+- git stash pop / git stash list
+
+- git merge 
+
+- git version
+
+- git log
+
+- git rm -rf node_modules/ --cached
+-recursivo e forçada
+
+- git config --global core.editor 'code --wait'
+
+- git branch -m novo nome
+
+- git branch -D nome da branch
+
+- git push origin <nome da branch>
+
+- git merge --abort
+
+- git reset HEAD
+
+- git push -u origin
+
+- git remote add origin https://github.com/mhnakashima/dio-takeblip-aplicando-conceitos-git-pratica.git
+
+- git branch -M main
+Isso significa que, ao executar o comando, a branch atual será renomeada para main, mesmo que essa branch já exista (efeito causado pelo --force).
+
+- git push origin branch --delete
+
+- git push -u origin main
+
+## Dicas úteis
+Pull sempre que for começar a trabalhar
+Sem commits na master
+Geralmente temos uma branch chamada DEV que receberá todas as features em desenvolvimento.
+Usar uma branch por feature
+Use nomes descritivos para commitar seus arquivos com a nomenclatura fix / feat

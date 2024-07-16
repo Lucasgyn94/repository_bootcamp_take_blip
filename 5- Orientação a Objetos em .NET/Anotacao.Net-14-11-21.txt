@@ -1,0 +1,181 @@
+PARADIGMAS DE PROGRAMAÇÃO
+Paradigmas de programção são modos diferentes de montar a estrura e execução de um código. Um paradigma de programação fornece e determina a visão que o programador possui sobre a estruturação e execução do programa.
+
+Cada paradigma surgiu de necessidades diferentes. Dado isso cada um apresenta maiores vantagens sobre os outros dentro do desenvolvimento de determinado sistema. Sendo assim, um paradigma pode oferecer técnicas apropriadas para uma aplicação específica. Entre eles, estão a programação orientada a objetos (POO) e a programação estruturada (PE);
+
+-> PROGRAMAÇÃO ESTRUTURADA
+A programação estruturada tem como principal característica sua interpretação linha por linha, em pequenos trechos de código, podendo eles não estar em uma ordem específica. Há três tipos de estruturas básicas para navegar pelo código: sequência, seleçãoo e repetição.
+ * Sequências: são os comandos a serem executados de cima para baixo, linha a linha do programa, de forma sequencial;
+
+ * Seleções: sequências que só devem ser executadas se uma condição for satisfeita (exemplos: if-else, switch e comandos parecidos);
+
+ * Repetições: sequências que devem ser executadas repetidademente até uma condição for satisfeita (for, while, do-while, etc);
+
+-> PROGRAMAÇÃO ORIENTADA A OBJETOS
+O POO é baseado no conceito de "objetos", que podem conter dados na forma de campos (atributos) e códigos, na forma de procedimentos (métodos). Uma característica é que um procedimento de objeto pode acessar, e geralmente modificar, os campos de dados do objeto com o qual eles estão associados e cada um é de receber processar e enviar dados, podendo ser visto como uma "máquina independente";
+EX: PEGAMOS UM CARRO, O MESMO SERIA DELIMITADO COMO OBJETO, DO QUAL TEM VÁRIOS ATRIBUTOS (Cor, modelo, marca, potência, quantidade de portas, velocidade max);
+
+Métodos são as ações que o objeto pode fazer (correr, estacionar);
+
+Classe é onde conceituamos o objeto;
+
+Objetos do mesmo tipo, pertencem a mesma classe;
+
+Para que uma linguagem possa ser considerada orientada a objeto é preciso atender a quatro tópicos bastante importantes, e esses tópicos é o que são chamados de "Os 4 pilares da Programação Orientada a Objeto". São eles:
+ *Abstração
+ * Encapsulamento
+ * Herança
+ * Polimorfismo
+
+A importância da POO é simples e direta. Tudo em .NET é objeto. Mesmo os tipos de dados mais simples são considerados objetos, já estes também contém métodos e propriedades. Implicitamente, todo e qualquer tipo ou objeto em .NET possui um ancestral comum.
+
+-> CLASSES
+Pode ser considerado como se fosse um molde para o objeto, contendo dentro de si as principais informações para a sua criação. Define os atributos e métodos comuns que serão compartilhados por um objeto.
+
+## OBJETOS
+Considera-se um objeto tudo aquilo em geral que possui atributos, comportamento e um estado. A classe em si é um conceito abstrato, como um molde, que se torna concreto e palpável através da criação de um objeto.
+
+Na programação o objeto é uma instanciação (criação a partir) de uma classe. Para criarmos ou "instanciarmos" objetos de uma determinada classe, utilizamos o operador "new".
+EX:
+$ Produto obj = new Produto();
+
+## VISIBILIDADE
+A visibilidade é importante para a proteção do código e suas funcionalidades, define quem pode alterar cada dado nos trechos de código em três principais níveis:
+ * Pública (representada pelo símbolo "+")
+ * Privada (representada pelo símbolo "-")
+ * Protegida (representada pelo símbolo "-")
+
+De forma completa se encontram os modificadores:
+* public
+Sem limitação de acesso
+* protected internal
+Acesso ilimitado à própria classe, às classes derivadas e ao próprio assembly.
+* protected
+Acesso ilimitado à própria classe, às classes derivadas.
+* internal
+Acesso ilimitado ao próprio assembly
+
+Esse encapsulamento de atributos e métodos impede o chamado vazamento de escopo, onde um atributo ou método é visível por alguém que não deveria vê-lo, como outro objeto ou classe.
+
+Isso evita a confusão do uso de variáveis globais no programa, deixando mais fácil de identificar em qual estado cada variável vai estar a cada momento do programa já que a restrição de acesso nos permite identificar quem consegue modificá-la.
+
+## TIPOS POR VALOR, TIPOS POR REFERÊNCIA E TIPOS PONTEIROS
+1- Tipos por valor
+O c# tem duas grandes categorias de tipos: por valor e por referência. Os tipos por valor são gerenciados diretamente e têm as seguintes características principais:
+ * Todos os tipos de dados numéricos.
+ * Não precisam ser inicializados com o operador new.
+ * A variável armazena o valor diretamente.
+ * A atribuição de uma variável a outra, copia o conteúdo, criando efetivamente outra cópia da variável.
+ * Não podem conter o valor null.
+ * Exemplos de variáveis desse tipo são: integers, doubles, floats e char.
+
+-> Inteiros
+Os tipos inteiros (Integers) têm sempre o mesmo signifiado, independentemente da implementação.
+- byte 
+inteiro de 8 bits sem sinal (0 a 255).
+
+- sbyte 
+inteiro de 8 bits com sinal (-127 a 128).
+
+- ushort 
+inteiro de 16 bits sem sinal (0 a 65.535)
+
+- short 
+inteiro de 16 bits com sinal (-32.768 a 32.767);
+
+- uint
+inteiro de 16 bits sem sinal (0 a 4.294.967.295)
+
+- int
+inteiro de 32 bits com sinal (-2.147.483.548 a 2.147.483.647);
+
+- ulong
+inteiro de 64 bit sem sinal (0 a 18.446.744.073.709.551515)
+
+- long
+Inteiro de 64 bits com sinal (-9.223.372.036.854.775.808 a 9.223.372.036)
+
+=> DOUBLE e FLOAT
+Os números de ponto flutuante são bastante convencionais, as operações de ponto flutuante não geram erros.
+ - Double
+Ponto flutuante binário IEEE de 8 bytes (+- 5.0 x 10 ^ -324 a +- 1.7 x 10^308), 15 dígitos decimais de precisão.
+
+ - Float
+Ponto flutuante binário IEEE de 4 bytes (+- 1.5 x 10^-45 a +- 3.4 x 10^38), 7 dígitos decimais de precisão. 
+
+=> Caracteres
+Em C#, todos os caracteres (char) são armazenados no padrão Unicode e usam 16 bits por caractere. O Unicode permite armazenar os caracteres de todas as línguas vivas (como grego, japonês, chinês e coreano) e algumas mortas (como sânscrito).
+- O tipo char carrega um único caractere Unicode de 16 bits. Não é compatível com inteiro.
+
+2- Tipos por referência
+Um tipo por referência armazena uma referência a seus dados. Os tipos de referência incluem o seguinte:
+- Duas variáveis poderem conter a referência a um mesmo objeto.
+- Operações em uma afetarem a outra
+- Todas as matrizes, mesmo que seus elementos sejam de tipos de valor.
+- Exemplos de tipos por referência: Strings, classes e arrays.
+
+-> Strings
+Semelhante ao char, strings são variáveis do tipo texto. São uma sequência de caracteres, geralmente utiizada para representar palavras, frases ou textos de programas.
+O tipo string (String Unicode) aceita até 1 giga de caracteres.
+As strings são consideradas imutáveis e não podem ser alteradas depois de criadas. Quando você efetua uma operação qualquer, como por exemplo, concatenar um caractere, você na verdade está criando outra string e descartando a anterior.
+
+-> Classes
+Como visto anteriormente é um tipo definido pelo usuário e correspondem a uma class. As classes são sempre derivadas de object e podem conter campos, métodos e propriedades. Uma classe pode derivar de uma única outra classe, e também de várias interfaces.
+
+-> Um array (matriz) é uma lista de valores onde todos os valores no grupo são referenciados ao valor específico na matriz. 
+
+
+3- Tipos ponteiros
+Um ponteiro ou apontador ou apontador é um tipo de dado de cujo valor se refere diretamente a um outro valor alocado em outra área da memória, através de seu endereço.
+OBS:
+O ponteiro chama um dado na memória através do endereço desse dado, ele aponta para esse dado através de uma declaração no código
+
+=> MÉTODOS
+Objetivos da aula:
+1- Métodos
+O que são métodos?
+Os métodos determinam o comportamento dos objetos de uma classe e são capazes de controlar o estado da instância. São funções que realizam tarefas. Eles podem ou não retornar valores, e podem ou não receber parâmetros.
+
+O envio de mensagens (chamada de métodos) pode alterar o estado de um objeto. Esses métodos temos como difundidos os Getter, os Setters e o Construct
+
+-> TIPOS DE MÉTODOS
+* Métodos acessores
+Os Getter ou métodos acessores solicitam o acesso a informações de um determinado produto sem dar acesso diretamente a ele, colocando ali uma barreira de proteção para os dados.
+No exemplo abaixo o get retorna o atributo correspondente:
+$ public int Codigo {
+  get {return codigo};
+  set {codigo = value; }
+}
+
+* Métodos Modificadores
+Os Setters ou métodos modificadores enviam o pedido de alteração de uma determinada informação de um objeto sem que se altere diretamente o mesmo.
+
+$ public int Codigo {
+  pegando o valor de codigo
+  get {return codigo};
+  repassando o valor colocado para o atributo codigode.
+  set {codigo = value; }
+}
+
+* Métodos Construtores
+A função do construct ou método construtor é inicializar ou dar forma à classe. É nele que indicamos os valores dos campos de uma classe. Esses valores podem ser internos (no código) ou externos (passados por parâmetros).
+
+As regras para definição de um construtor são:
+- O construtor deve ter o mesmo nome da classe
+- Não tem tipo de retorno;
+- é executado apenas um, apenas uma vez, no momento da criação do objeto;
+- Não pode ser chamado diretamente;
+- Deve ser "public";
+
+=> PROPRIEDADES e EVENTOS
+1- Propriedades 
+Uma forma mais inteligente de fazer implementações de campos em classes são as "propriedades".
+Propriedades consistem em um par de métodos "get" e "set" que respectivamente servem para recuperar e atribuiu o valor a um campo.
+
+Geralmente, para cada método existe uma variável dentro da classe que armazena o valor da propriedade.
+EX: propriedade de cor, tamanho etc
+
+2- Eventos
+São mensagens que a classe dispara em determinada situação. Para que o evento funcione, é necessário que um método seja escrito para ser executado quando ocorrer o evento. A classe apenas fica sabendo que existe esse método em tempo de execução.
+
+Para que o mecanismo dos eventos funcione, é necessário usar um tipo de estrutura chamado Delegate, uma variável que guarda o endereço de uma função. Assim, quando o evento é disparado, essa variável chama a função associda a ela.

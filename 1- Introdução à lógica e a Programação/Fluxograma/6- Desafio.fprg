@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Admin"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-11-05 01:06:42 "/>
+        <attribute name="created" value="QWRtaW47Sk9TRTsyMDIxLTExLTA1OyIxMjozOToxNiAiOzE5ODM="/>
+        <attribute name="edited" value="QWRtaW47Sk9TRTsyMDIxLTExLTA1OyIwMTowNjo0MiAiOzE7MjA4Mg=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="janeiro" type="String" array="False" size=""/>
+            <declare name="fevereiro" type="String" array="False" size=""/>
+            <declare name="marco" type="String" array="False" size=""/>
+            <declare name="abril" type="String" array="False" size=""/>
+            <declare name="valorJaneiro" type="Real" array="False" size=""/>
+            <declare name="valorFevereiro" type="Real" array="False" size=""/>
+            <declare name="valorMarco" type="Real" array="False" size=""/>
+            <declare name="valorAbril" type="Real" array="False" size=""/>
+            <declare name="media" type="Real" array="False" size=""/>
+            <input variable="valorJaneiro"/>
+            <input variable="valorFevereiro"/>
+            <input variable="valorMarco"/>
+            <input variable="valorAbril"/>
+            <assign variable="media" expression="(valorJaneiro + valorFevereiro + valorMarco + valorAbril) / 4"/>
+            <if expression="media &gt;= 5000">
+                <then>
+                    <output expression="&quot;Parab&#233;ns, voc&#234; receber&#225; um abono de 10%&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Voc&#234; receber&#225; um abono de 3%&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

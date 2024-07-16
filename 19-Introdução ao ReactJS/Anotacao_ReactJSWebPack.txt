@@ -1,0 +1,152 @@
+=> Webpack
+É um module bundler (um empacotador de módulos para aplicações JS)
+
+Gerar bundler que será utilizado no HTML, em ES5
+
+Suporte:
+* Fontes
+* CSS
+* Imagens
+* Html
+* Js
+* Plugins
+
+=> CONFIGURAÇÃO
+Principais conceitos do Webpack:
+* Entry 'Entrada' - Utilizando grafo, o Webpack precisa de um ponto de entrada para buscar todos os módulos e dependências.
+(Entry é o ponto de entrada do webpack)
+
+* Output 'Saida' - É para determinar quais são os bundlers que o Webpack irá emitir.
+
+* Loaders 'Carregadores' - É para permitir que o Webpack gerencie arquivos que não são Javascript;
+
+* Plugins - Plugins podem ser utilizados para otimização de pacotes, minificação, injeção de scripts e muito mais
+
+* Mode - Utilizados para abordagem de configuração zero. É possível configurar módulos como 'production', 'development' ou 'none'
+
+-> Production - Trás otimizações internas e gera um arquivo final de entrada
+
+-> Development - É executado com três plugins: UglifyJsPlugin, ModuleConcatenationPlugin e NoEmitOnErrosPlugin. 
+
+-> none - caso não queira passar nenhuma configuração
+
+### COMANDOS CONFIGURAÇÃO
+-> Criação do arquivo webpack.config.js dentro do projeto
+
+$ npm i -D webpack webpack-cli
+OBS: -D significa modo Desenvolvimento
+
+Na pasta package.json, adiciona o seguinte comando a script
+$ "build": "webpack --modeproduction"
+
+$ npm i @babel/core babel-loader @babel/preset-env@babel/preset-react --save-dev
+
+-> Criar pasta .babelrc e adicionar o preset:
+{
+  "presets": [
+   "@babel/preset-env"
+ ]
+}
+
+-> Adicionar babel/preset-react ao arquivo .babelrc
+{
+  "presets": [
+   "@babel/preset-env"
+   "@babel/preset-react"
+ ]
+}
+
+
+-> APOS TUDO CERTO FAZEMOS A INICIALIZACAO DOS SCRIPTS 'build' e 'dev'
+$ npm run build
+$ npn run dev
+
+-> NA PASTA PACKAGEN.JSON, ADICIONAMOS O SCRIPT DE INICIALIZAÇÃO
+"start:dev": "webpack-dev-server"
+
+
+-> INSTALAR 'REACT' E 'REACT-DOM' VIA CMD
+$ npm install react react-dom 
+ 
+-> AGORA PARA VER A APLICAÇÃO FUNCIONANDO PRECIMOS DE MAIS UMA DEPENDÊNCIA 'Dev Server', no cmd faça:
+$ npm install -D webpack-dev-server
+
+#####
+
+
+
+####### ANOTAÇÃO RELEVANTE
+## MOSTRAR NOME ARQUIVO
+cat + nomeArquivo
+->Exemplo
+$ cat package.json
+- Mostra o conteúdo da pasta package.json
+
+==> EXEMPLO BÁSICO DE UM INDEX CHAMANDO UMA CLASSE APP E RENDERIZANDO
+
+import ReactDOM from 'react';
+import react from 'react';
+import App from "./App";
+
+ReactDOM.render(<App />, document.getElementById("app")); 
+
+
+### RESUMO DA CONFIGURAÇÃO
+1- Criação do arquivo webpack.config.js
+
+2- Executar prompt
+$ npm i --save-dev webpack webpack-cli
+
+3- Adicionar ao script no package.json
+"build": "webpack --mode production"
+
+npm i @babel/core babel-loader @babel/preset-env@babel/presect-react --save-dev
+
+node dist/bundler.js
+mostra o conteudo de teste no cmd
+
+src/index.js
+src/App.js
+
+import React from "react";
+import ReactDOM from "react-dom";
+import App from "./App"
+ReactDom.render(, documentation)
+
+CRIAR UM DEV SERVER PARA VER A APLICACAO FUNCIONAR
+$ npm i -D webpack-dev-server
+
+"scripts": {
+  "start:dev" : "webpack-dev-server"
+}
+
+Nosso server precisa de um index.html para iniciar o script no browser, o plugin recomendado pelo próprio webpack seria o html-webpack-plugin para instalá-lo simplesmente execute um:
+$ npm install --save-dev " html-webpack-plugin
+
+
+### ULTIMA PARTE ESLINK
+ESLint é uma ferramenta de análise de código estática para identificar padrões problemáticos encontrados no código JavaScript. Foi criado por Nicholas C. Zakas em 2013.
+
+Instalação
+- No terminal
+$ npm install --save-dev eslint babel-eslint eslint-plugin-react eslint-watch
+
+* Apos na pasta script adiciona: 
+"eslint": "eslint ./src/*.js"
+
+E para executar o Eslint, executamos no terminal
+$ npm run eslint
+
+Com o 'sourcemap'O webpack vai gerar o mapeamento de todos os arquivo
+sourcemap: true
+
+OBSERVAÇÕES
+__dirname e o diretorio raiz do path
+
+no scripts e possivel adicionar comandos que serão executados
+
+dist e o nome da pasta que o arquivo vai ficar, poderia ser qualquer nome
+
+filename: e o arquivo final do projeto, onde vai esta todos os modulos juntos e empacotados
+
+filename: determina o tamanho do nosso bundle

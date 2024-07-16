@@ -1,0 +1,7 @@
+## PORTUGOL
+Portugol é uma pseudolinguagem que permite ao leitor desenvolver algoritmos estruturados em português de forma simples e intuitiva, independentemente de linguagem de programação.
+
+OBS: cadeia = conjunto de string em portugol
+
+OBS2:
+Concatenação no portugol studio é usado o sinal de +

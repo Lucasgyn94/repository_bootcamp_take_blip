@@ -1,0 +1,105 @@
+1 PASSO: Inicialização
+$ npm init
+
+2 PASSO: configuração
+$ npm install --save react@16.8.6 react-dom@16.8.6 react-scripts@3.0.1
+
+"react": "^17.0.2",
+"react-dom": "^17.0.2",
+"react-scripts": "5.0.0",
+"web-vitals": "^2.1.2"
+
+
+### JSX
+const element = <h1> Hello, lucas! </h1>;
+nem HTML e nem uma string!
+É uma linguagem de marcação que permite a criação de elementos
+
+React não separa as tecnologias colocando marcação em arquivos separados, e sim separa conceitos e mantém o código pouco acoplado chamando-os de componentes.
+
+Não é obrigatória a utilização do JSX.
+
+Sintax Suggar para React.createElement
+
+O browser não interpreta o JSX, para isso é necessário um transpilador para que a aplicação possa enter o código. O mais utlizado é o Babel;
+
+OBS: O JSX deve ser colocado entre chaves.
+
+### CHAMAR CLASSE
+className=""
+
+### RENDERIZAÇÃO
+* Renderização de elementos
+* React Dom
+* Nós Raíz.
+
+* React "pensa" em como a interface deve estar a cada momento ao invés de alterá-la com o tempo, o que faz ter ganho de perfomance e evita uma série de erros
+
+### Componentes e Props
+Podem trabalhar como Função e Classe
+
+* Componentes permitem dividir a UI em partes independentes, reutilizáveis e pensar cada parte isoladamente. Essa página fornece uma introdução à ideia de componentes.
+
+* Conceitualmente, componentes são como funções JavaScript. Eles aceitam entradas arbitrárias (chamadas "props") e retornam elementos React que descrevem o que deve aparecer na tela.
+
+### Componentes de função e Classe
+* A maneira mais simples de definir um componete é escrever uma função JavaScript
+
+$ function Welcome(props) {
+   return (
+   <h1>
+   Hello, {props.name}
+   </h1>
+)
+}
+
+OBS: As props servem para passar parametros
+
+OBS: JavaScript não tem classes de verdade, e sim prototipos
+$ className=""
+
+### CHILDREN
+Tudo que eu passar atraves de um componente, posso acessar dentro do children
+
+Definições:
+
+a) O Modelo de Objeto de Documentos (do inglês DOM, Document Object Model) é uma API definida pelo W3C (Consórcio da Rede Mundial) para representar e interagir com qualquer documento HTML.
+
+b) O Dom é um modelo de documento carregado pelo navegador, sendo representado por uma árvore de nós, onde cada nó representa uma parte do documento, como um elemento HTML, um texto ou um comentário por exemplo.
+
+c) Os elementos HTML são as tags de um documento HTML que constituem os elementos da árvore DOM. Cada elemento pode ter atributos, textos ou ainda outros elementos.
+
+b) A propriedade element.children retorna um HTMLCollection ativo que contém todos os elementos filho (child) do elemento HTML no qual foi chamado.
+
+c) A interface HTMLCollection representa uma coleção genérica (objeto array) de elementos HTML (na ordem em que aparecem no documento) e oferece métodos e propriedades para selecioná-los da lista. Uma HTMLCollection é atualizada automaticamente sempre que o documento for modificado.
+
+### ESTADO E CICLO DE VIDA ReatJS
+
+-> Inici
+
+### Ecossistema
+* React Router;
+* Redux
+* Material UI;
+* Ant-Design
+* Storybook;
+* Gatsby
+* Jest
+* React i18n Next
+
+
+    /* Props, é uma abreviação de properties, ou propriedades, 
+    são informações que podem ser passadas para um componente. 
+    Pode ser uma string, um número, até mesmo uma função. 
+    Este valor pode então ser utilizado pelo componente que a recebe.
+    */
+
+// set = definir. Ele permiti armazenar valores únicos de qualquer tipo desde valores primitivos  a referência em objetos;
+
+### INTEGRANDO WEBPACK AO DESENVOLVIMENTO COM REACTJS
+1. O que é Webpack
+
+2. Configuração
+
+3. Criando um Dev Server
+

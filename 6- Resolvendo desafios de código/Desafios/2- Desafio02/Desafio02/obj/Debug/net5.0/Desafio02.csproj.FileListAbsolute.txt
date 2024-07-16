@@ -1,0 +1,16 @@
+C:\Users\Admin\Desktop\DigitalOne\6- Resolvendo desafios de código\Desafios\2- Desafio02\Desafio02\bin\Debug\net5.0\Desafio02.exe
+C:\Users\Admin\Desktop\DigitalOne\6- Resolvendo desafios de código\Desafios\2- Desafio02\Desafio02\bin\Debug\net5.0\Desafio02.deps.json
+C:\Users\Admin\Desktop\DigitalOne\6- Resolvendo desafios de código\Desafios\2- Desafio02\Desafio02\bin\Debug\net5.0\Desafio02.runtimeconfig.json
+C:\Users\Admin\Desktop\DigitalOne\6- Resolvendo desafios de código\Desafios\2- Desafio02\Desafio02\bin\Debug\net5.0\Desafio02.runtimeconfig.dev.json
+C:\Users\Admin\Desktop\DigitalOne\6- Resolvendo desafios de código\Desafios\2- Desafio02\Desafio02\bin\Debug\net5.0\Desafio02.dll
+C:\Users\Admin\Desktop\DigitalOne\6- Resolvendo desafios de código\Desafios\2- Desafio02\Desafio02\bin\Debug\net5.0\ref\Desafio02.dll
+C:\Users\Admin\Desktop\DigitalOne\6- Resolvendo desafios de código\Desafios\2- Desafio02\Desafio02\bin\Debug\net5.0\Desafio02.pdb
+C:\Users\Admin\Desktop\DigitalOne\6- Resolvendo desafios de código\Desafios\2- Desafio02\Desafio02\obj\Debug\net5.0\Desafio02.csproj.AssemblyReference.cache
+C:\Users\Admin\Desktop\DigitalOne\6- Resolvendo desafios de código\Desafios\2- Desafio02\Desafio02\obj\Debug\net5.0\Desafio02.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin\Desktop\DigitalOne\6- Resolvendo desafios de código\Desafios\2- Desafio02\Desafio02\obj\Debug\net5.0\Desafio02.AssemblyInfoInputs.cache
+C:\Users\Admin\Desktop\DigitalOne\6- Resolvendo desafios de código\Desafios\2- Desafio02\Desafio02\obj\Debug\net5.0\Desafio02.AssemblyInfo.cs
+C:\Users\Admin\Desktop\DigitalOne\6- Resolvendo desafios de código\Desafios\2- Desafio02\Desafio02\obj\Debug\net5.0\Desafio02.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\DigitalOne\6- Resolvendo desafios de código\Desafios\2- Desafio02\Desafio02\obj\Debug\net5.0\Desafio02.dll
+C:\Users\Admin\Desktop\DigitalOne\6- Resolvendo desafios de código\Desafios\2- Desafio02\Desafio02\obj\Debug\net5.0\ref\Desafio02.dll
+C:\Users\Admin\Desktop\DigitalOne\6- Resolvendo desafios de código\Desafios\2- Desafio02\Desafio02\obj\Debug\net5.0\Desafio02.pdb
+C:\Users\Admin\Desktop\DigitalOne\6- Resolvendo desafios de código\Desafios\2- Desafio02\Desafio02\obj\Debug\net5.0\Desafio02.genruntimeconfig.cache
